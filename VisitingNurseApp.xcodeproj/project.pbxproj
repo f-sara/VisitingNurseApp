@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
+		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
+		8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* ViewController.swift */; };
+		8BD378EA2C2BBBB8003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378E92C2BBBB8003468A7 /* Base */; };
+		8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */; };
+		8BD378EF2C2BBBBA003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378EE2C2BBBBA003468A7 /* Base */; };
+		8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */; };
+		8BD379042C2BBBBA003468A7 /* VisitingNurseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */; };
+		8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BD378F62C2BBBBA003468A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BD378D72C2BBBB8003468A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BD378DE2C2BBBB8003468A7;
+			remoteInfo = VisitingNurseApp;
+		};
+		8BD379002C2BBBBA003468A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BD378D72C2BBBB8003468A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BD378DE2C2BBBB8003468A7;
+			remoteInfo = VisitingNurseApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BD378E62C2BBBB8003468A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BD378EE2C2BBBBA003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BD378F02C2BBBBA003468A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD378F52C2BBBBA003468A7 /* VisitingNurseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingNurseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppTests.swift; sourceTree = "<group>"; };
+		8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingNurseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITests.swift; sourceTree = "<group>"; };
+		8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BD378DC2C2BBBB8003468A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378F22C2BBBBA003468A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378FC2C2BBBBA003468A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BD378D62C2BBBB8003468A7 = {
+			isa = PBXGroup;
+			children = (
+				8BD378E12C2BBBB8003468A7 /* VisitingNurseApp */,
+				8BD378F82C2BBBBA003468A7 /* VisitingNurseAppTests */,
+				8BD379022C2BBBBA003468A7 /* VisitingNurseAppUITests */,
+				8BD378E02C2BBBB8003468A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BD378E02C2BBBB8003468A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */,
+				8BD378F52C2BBBBA003468A7 /* VisitingNurseAppTests.xctest */,
+				8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BD378E12C2BBBB8003468A7 /* VisitingNurseApp */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */,
+				8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */,
+				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
+				8BD378E82C2BBBB8003468A7 /* Main.storyboard */,
+				8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */,
+				8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */,
+				8BD378F02C2BBBBA003468A7 /* Info.plist */,
+			);
+			path = VisitingNurseApp;
+			sourceTree = "<group>";
+		};
+		8BD378F82C2BBBBA003468A7 /* VisitingNurseAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */,
+			);
+			path = VisitingNurseAppTests;
+			sourceTree = "<group>";
+		};
+		8BD379022C2BBBBA003468A7 /* VisitingNurseAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */,
+				8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */,
+			);
+			path = VisitingNurseAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BD378DE2C2BBBB8003468A7 /* VisitingNurseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD379092C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseApp" */;
+			buildPhases = (
+				8BD378DB2C2BBBB8003468A7 /* Sources */,
+				8BD378DC2C2BBBB8003468A7 /* Frameworks */,
+				8BD378DD2C2BBBB8003468A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisitingNurseApp;
+			productName = VisitingNurseApp;
+			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BD378F42C2BBBBA003468A7 /* VisitingNurseAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD3790C2C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseAppTests" */;
+			buildPhases = (
+				8BD378F12C2BBBBA003468A7 /* Sources */,
+				8BD378F22C2BBBBA003468A7 /* Frameworks */,
+				8BD378F32C2BBBBA003468A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD378F72C2BBBBA003468A7 /* PBXTargetDependency */,
+			);
+			name = VisitingNurseAppTests;
+			productName = VisitingNurseAppTests;
+			productReference = 8BD378F52C2BBBBA003468A7 /* VisitingNurseAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BD378FE2C2BBBBA003468A7 /* VisitingNurseAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD3790F2C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseAppUITests" */;
+			buildPhases = (
+				8BD378FB2C2BBBBA003468A7 /* Sources */,
+				8BD378FC2C2BBBBA003468A7 /* Frameworks */,
+				8BD378FD2C2BBBBA003468A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BD379012C2BBBBA003468A7 /* PBXTargetDependency */,
+			);
+			name = VisitingNurseAppUITests;
+			productName = VisitingNurseAppUITests;
+			productReference = 8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BD378D72C2BBBB8003468A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8BD378DE2C2BBBB8003468A7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8BD378F42C2BBBBA003468A7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8BD378DE2C2BBBB8003468A7;
+					};
+					8BD378FE2C2BBBBA003468A7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8BD378DE2C2BBBB8003468A7;
+					};
+				};
+			};
+			buildConfigurationList = 8BD378DA2C2BBBB8003468A7 /* Build configuration list for PBXProject "VisitingNurseApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BD378D62C2BBBB8003468A7;
+			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BD378DE2C2BBBB8003468A7 /* VisitingNurseApp */,
+				8BD378F42C2BBBBA003468A7 /* VisitingNurseAppTests */,
+				8BD378FE2C2BBBBA003468A7 /* VisitingNurseAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BD378DD2C2BBBB8003468A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
+				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
+				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378F32C2BBBBA003468A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378FD2C2BBBBA003468A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BD378DB2C2BBBB8003468A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */,
+				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
+				8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378F12C2BBBBA003468A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD378FB2C2BBBBA003468A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD379042C2BBBBA003468A7 /* VisitingNurseAppUITests.swift in Sources */,
+				8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BD378F72C2BBBBA003468A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BD378DE2C2BBBB8003468A7 /* VisitingNurseApp */;
+			targetProxy = 8BD378F62C2BBBBA003468A7 /* PBXContainerItemProxy */;
+		};
+		8BD379012C2BBBBA003468A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BD378DE2C2BBBB8003468A7 /* VisitingNurseApp */;
+			targetProxy = 8BD379002C2BBBBA003468A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BD378E82C2BBBB8003468A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BD378E92C2BBBB8003468A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BD378EE2C2BBBBA003468A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BD379072C2BBBBA003468A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BD379082C2BBBBA003468A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BD3790A2C2BBBBA003468A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisitingNurseApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BD3790B2C2BBBBA003468A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisitingNurseApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BD3790D2C2BBBBA003468A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisitingNurseApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VisitingNurseApp";
+			};
+			name = Debug;
+		};
+		8BD3790E2C2BBBBA003468A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisitingNurseApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VisitingNurseApp";
+			};
+			name = Release;
+		};
+		8BD379102C2BBBBA003468A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VisitingNurseApp;
+			};
+			name = Debug;
+		};
+		8BD379112C2BBBBA003468A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGJJ9A3WD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VisitingNurseApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BD378DA2C2BBBB8003468A7 /* Build configuration list for PBXProject "VisitingNurseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD379072C2BBBBA003468A7 /* Debug */,
+				8BD379082C2BBBBA003468A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD379092C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD3790A2C2BBBBA003468A7 /* Debug */,
+				8BD3790B2C2BBBBA003468A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD3790C2C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD3790D2C2BBBBA003468A7 /* Debug */,
+				8BD3790E2C2BBBBA003468A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD3790F2C2BBBBA003468A7 /* Build configuration list for PBXNativeTarget "VisitingNurseAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD379102C2BBBBA003468A7 /* Debug */,
+				8BD379112C2BBBBA003468A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BD378D72C2BBBB8003468A7 /* Project object */;
+}
