@@ -19,6 +19,8 @@
 		8BD379182C2E4CFC003468A7 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD379172C2E4CFC003468A7 /* SwiftFormat */; };
 		8BD3791A2C2E4CFC003468A7 /* CommandLineTool in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD379192C2E4CFC003468A7 /* CommandLineTool */; };
 		8BD3791C2C2E4CFC003468A7 /* swiftformat in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD3791B2C2E4CFC003468A7 /* swiftformat */; };
+		8BD3791F2C2E4ED0003468A7 /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD3791E2C2E4ED0003468A7 /* SwiftLintFramework */; };
+		8BD379212C2E4ED0003468A7 /* swiftlint in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD379202C2E4ED0003468A7 /* swiftlint */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD379212C2E4ED0003468A7 /* swiftlint in Frameworks */,
+				8BD3791F2C2E4ED0003468A7 /* SwiftLintFramework in Frameworks */,
 				8BD3791A2C2E4CFC003468A7 /* CommandLineTool in Frameworks */,
 				8BD3791C2C2E4CFC003468A7 /* swiftformat in Frameworks */,
 				8BD379182C2E4CFC003468A7 /* SwiftFormat in Frameworks */,
@@ -153,6 +157,8 @@
 				8BD379172C2E4CFC003468A7 /* SwiftFormat */,
 				8BD379192C2E4CFC003468A7 /* CommandLineTool */,
 				8BD3791B2C2E4CFC003468A7 /* swiftformat */,
+				8BD3791E2C2E4ED0003468A7 /* SwiftLintFramework */,
+				8BD379202C2E4ED0003468A7 /* swiftlint */,
 			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
@@ -231,6 +237,7 @@
 				8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */,
 				8BD379152C2E4C22003468A7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				8BD379162C2E4CFC003468A7 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+				8BD3791D2C2E4ED0003468A7 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
 			projectDirPath = "";
@@ -658,6 +665,14 @@
 				minimumVersion = 0.54.0;
 			};
 		};
+		8BD3791D2C2E4ED0003468A7 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,6 +690,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8BD379162C2E4CFC003468A7 /* XCRemoteSwiftPackageReference "SwiftFormat" */;
 			productName = swiftformat;
+		};
+		8BD3791E2C2E4ED0003468A7 /* SwiftLintFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD3791D2C2E4ED0003468A7 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = SwiftLintFramework;
+		};
+		8BD379202C2E4ED0003468A7 /* swiftlint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD3791D2C2E4ED0003468A7 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = swiftlint;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
