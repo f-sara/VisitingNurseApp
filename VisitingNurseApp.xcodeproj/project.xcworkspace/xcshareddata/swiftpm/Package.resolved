@@ -1,5 +1,5 @@
 {
-  "originHash" : "61cb153b39e216f6b4d816b3acbae9d6aaebf4be694ddc6c3490c85ddb41164c",
+  "originHash" : "3dfbf6afbc9c31f901fe02c2d858ead47b1ebf45f19dcb04bdf92a573ed38754",
   "pins" : [
     {
       "identity" : "fscalendar",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
         "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "swiftformat",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nicklockwood/SwiftFormat",
+      "state" : {
+        "revision" : "dd989a46d0c6f15c016484bab8afe5e7a67a4022",
+        "version" : "0.54.0"
       }
     },
     {
