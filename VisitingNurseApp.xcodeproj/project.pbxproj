@@ -217,6 +217,7 @@
 			mainGroup = 8BD378D62C2BBBB8003468A7;
 			packageReferences = (
 				8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
 			projectDirPath = "";
@@ -618,6 +619,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.8.4;
+			};
+		};
+		8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
