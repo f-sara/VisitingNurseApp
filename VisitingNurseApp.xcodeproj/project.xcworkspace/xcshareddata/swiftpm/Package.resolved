@@ -1,5 +1,5 @@
 {
-  "originHash" : "21a41eece1e02175f22bc4164b19620807ce514840a28eaa0ce4c1c8dda7132f",
+  "originHash" : "61cb153b39e216f6b4d816b3acbae9d6aaebf4be694ddc6c3490c85ddb41164c",
   "pins" : [
     {
       "identity" : "fscalendar",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "0fbdec5172fccb90f707472eeaea4ffe095278f6",
         "version" : "2.8.4"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess/",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e0c7eebc5a4465a3c4680764f26b7a61f567cdaf"
       }
     },
     {
