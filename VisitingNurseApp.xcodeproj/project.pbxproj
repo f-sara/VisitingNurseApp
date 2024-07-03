@@ -143,6 +143,8 @@
 			dependencies = (
 			);
 			name = VisitingNurseApp;
+			packageProductDependencies = (
+			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,11 @@
 				Base,
 			);
 			mainGroup = 8BD378D62C2BBBB8003468A7;
+			packageReferences = (
+				8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */,
+				8BD379152C2E4C22003468A7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -607,6 +614,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
+		8BD379152C2E4C22003468A7 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8BD378D72C2BBBB8003468A7 /* Project object */;
 }
