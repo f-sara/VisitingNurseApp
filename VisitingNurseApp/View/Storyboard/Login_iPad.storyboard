@@ -158,9 +158,6 @@
                             <constraint firstItem="EKf-7F-1jz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wzQ-c0-NHS"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="loginButton" destination="K7N-nP-aaO" id="5ng-YV-LsU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sE0-SQ-1No" userLabel="Exit" sceneMemberID="exit"/>

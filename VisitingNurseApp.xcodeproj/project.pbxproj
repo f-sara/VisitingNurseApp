@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4364702C39112000760578 /* Login_iPad.storyboard */; };
 		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
+		8B4364792C39363900760578 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364782C39363900760578 /* LoginModel.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
 		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
 		8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		8B4364702C39112000760578 /* Login_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login_iPad.storyboard; sourceTree = "<group>"; };
 		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B4364782C39363900760578 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B4364742C3935F800760578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B4364762C39360C00760578 /* ViewController */,
+				8B4364752C39360200760578 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B4364752C39360200760578 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378E82C2BBBB8003468A7 /* Main.storyboard */,
+				8B4364702C39112000760578 /* Login_iPad.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8B4364762C39360C00760578 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
+				8B4364722C39216C00760578 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8B4364772C39362700760578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B4364782C39363900760578 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8BD378D62C2BBBB8003468A7 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +142,8 @@
 			children = (
 				8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */,
 				8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */,
-				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
-				8B4364722C39216C00760578 /* LoginViewController.swift */,
-				8BD378E82C2BBBB8003468A7 /* Main.storyboard */,
-				8B4364702C39112000760578 /* Login_iPad.storyboard */,
+				8B4364742C3935F800760578 /* View */,
+				8B4364772C39362700760578 /* Model */,
 				8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */,
 				8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */,
 				8BD378F02C2BBBBA003468A7 /* Info.plist */,
@@ -272,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
 				8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
