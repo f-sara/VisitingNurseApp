@@ -46,7 +46,7 @@
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BD378E62C2BBBB8003468A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainCalendar.storyboard; sourceTree = "<group>"; };
 		8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD378EE2C2BBBBA003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BD378F02C2BBBBA003468A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		8B4364752C39360200760578 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				8BD378E82C2BBBB8003468A7 /* Main.storyboard */,
+				8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */,
 				8B4364702C39112000760578 /* Login_iPad.storyboard */,
 			);
 			path = Storyboard;
@@ -348,12 +348,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BD378E82C2BBBB8003468A7 /* Main.storyboard */ = {
+		8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8BD378E92C2BBBB8003468A7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainCalendar.storyboard;
 			sourceTree = "<group>";
 		};
 		8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */ = {
