@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct LoginModel {
+    func loginAuthentication() -> Bool {
+        return true
+    }
+}
