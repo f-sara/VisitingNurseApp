@@ -126,6 +126,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
+                                        <connections>
+                                            <segue destination="dpF-9j-u75" kind="show" identifier="showMainCalendar" id="eax-rc-9uw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -163,6 +166,16 @@
                 <exit id="sE0-SQ-1No" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-143.02325581395348" y="3.9244186046511627"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="d2S-b9-7Kh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MainCalendar" id="dpF-9j-u75" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b2h-5Y-hmF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBx-vN-zzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="3"/>
         </scene>
     </scenes>
     <resources>
