@@ -8,7 +8,10 @@
 import Foundation
 
 struct LoginModel {
-    func loginAuthentication() -> Bool {
-        return true
+
+    // TODO: 認証処理
+    func authentication(auth: Bool) -> Bool {
+        // TODO: 認証結果をUserDefaults に保存する
+        return auth
     }
 }
