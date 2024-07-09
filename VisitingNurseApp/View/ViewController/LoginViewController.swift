@@ -9,12 +9,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    private let 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func loginButton(_ sender: Any) {
+    }
+
+    private func showCalendar() {
+        let auth =
+
+    }
 
 
 }
