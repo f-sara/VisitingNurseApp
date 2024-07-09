@@ -7,23 +7,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginPresenterOutput {
 
-    private let 
+    private var presenter: LoginPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter = LoginPresenter(output: self, model: LoginModel())
     }
 
     @IBAction func loginButton(_ sender: Any) {
+        showMainCalendar()
     }
 
-    private func showCalendar() {
-        let auth =
-
+    func showMainCalendar() {
+        if presenter.loginAuth() {
+            performSegue(withIdentifier: "showMainCalendar", sender: nil)
+        }
     }
-
-
 }
