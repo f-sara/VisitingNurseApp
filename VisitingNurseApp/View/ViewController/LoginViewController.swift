@@ -11,6 +11,10 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
 
     private var presenter: LoginPresenter!
 
+    @IBOutlet weak var codeTextField: UITextField!
+    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,9 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
     }
 
     func showMainCalendar() {
+        if codeTextField.text != nil || userTextField.text != nil || passwordTextField.text != nil {
+            return
+        }
         if presenter.loginAuth() {
             performSegue(withIdentifier: R.segue.loginViewController.showMainCalendar, sender: nil)
         }
