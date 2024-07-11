@@ -11,6 +11,7 @@
 		8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4364702C39112000760578 /* Login_iPad.storyboard */; };
 		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
 		8B4364792C39363900760578 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364782C39363900760578 /* LoginModel.swift */; };
+		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
 		8BBE922D2C3A5B6900E476D1 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
 		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +132,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8B5643512C3F6D230077E2A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BD378D62C2BBBB8003468A7 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +146,7 @@
 				8BD378F82C2BBBBA003468A7 /* VisitingNurseAppTests */,
 				8BD379022C2BBBBA003468A7 /* VisitingNurseAppUITests */,
 				8BD378E02C2BBBB8003468A7 /* Products */,
+				8B5643512C3F6D230077E2A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,10 +206,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B26E2522C3CDAE500B8F72B /* PBXTargetDependency */,
+				8B56434F2C3F6C880077E2A5 /* PBXTargetDependency */,
 			);
 			name = VisitingNurseApp;
 			packageProductDependencies = (
+				8B5643522C3F6D780077E2A5 /* RswiftLibrary */,
 			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
@@ -352,9 +363,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8B26E2522C3CDAE500B8F72B /* PBXTargetDependency */ = {
+		8B56434F2C3F6C880077E2A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 8B26E2512C3CDAE500B8F72B /* RswiftGenerateInternalResources */;
+			productRef = 8B56434E2C3F6C880077E2A5 /* RswiftGenerateInternalResources */;
 		};
 		8BD378F72C2BBBBA003468A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -708,9 +719,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8B26E2512C3CDAE500B8F72B /* RswiftGenerateInternalResources */ = {
+		8B56434E2C3F6C880077E2A5 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		8B5643522C3F6D780077E2A5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -163,6 +163,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="dt3-fk-QER"/>
                     <connections>
+                        <outlet property="codeTextField" destination="dcu-d9-XFF" id="Ke4-ig-oTx"/>
+                        <outlet property="passwordTextField" destination="p6F-o7-Qrd" id="uqh-bS-u8q"/>
+                        <outlet property="userTextField" destination="PuU-hy-KWV" id="2X0-t4-tVg"/>
                         <segue destination="dpF-9j-u75" kind="push" identifier="showMainCalendar" id="GuO-YW-kRD"/>
                     </connections>
                 </viewController>

@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
 
     func showMainCalendar() {
         if presenter.loginAuth() {
-            performSegue(withIdentifier: "showMainCalendar", sender: nil)
+            performSegue(withIdentifier: R.segue.loginViewController.showMainCalendar, sender: nil)
         }
     }
 }
