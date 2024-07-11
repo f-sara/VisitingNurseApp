@@ -26,7 +26,7 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
     }
 
     func showMainCalendar() {
-        if codeTextField.text != nil || userTextField.text != nil || passwordTextField.text != nil {
+        if codeTextField.text?.isEmpty ?? true || userTextField.text?.isEmpty ?? true || passwordTextField.text?.isEmpty ?? true {
             return
         }
         if presenter.loginAuth() {
