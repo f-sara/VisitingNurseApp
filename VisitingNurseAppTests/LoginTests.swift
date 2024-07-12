@@ -8,28 +8,47 @@
 import XCTest
 @testable import VisitingNurseApp
 
-final class LoginTests: XCTestCase {
+final class LoginTests:     XCTestCase {
 
-    private let loginModel = LoginModel()
+    let loginModel = LoginModel()
+    let loginViewController: LoginViewController =
+    UIStoryboard(name: R.storyboard.login_iPad.name, bundle: nil)
+        .instantiateViewController(identifier: "login_iPad")
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        loginViewController.loadViewIfNeeded()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-
-    private func testSuccessAuthentication() {
+    func testSuccessAuthentication() {
         let auth = loginModel.authentication(auth: true)
         XCTAssertEqual(true, auth)
     }
 
-    private func testFailAuthentication() {
+    func testFailAuthentication() {
         let auth = loginModel.authentication(auth: false)
         XCTAssertEqual(false, auth)
     }
 
+    func testCheckTextFieldEmpty() {
+        loginViewController.codeTextField.text = ""
+        loginViewController.userTextField.text = "hoge"
+        loginViewController.passwordTextField.text = "hoge"
+
+        let result = loginViewController.checkTextField()
+        XCTAssertEqual(true, result)
+    }
+
+    func testCheckTextField() {
+        loginViewController.codeTextField.text = "hoge"
+        loginViewController.userTextField.text = "hoge"
+        loginViewController.passwordTextField.text = "hoge"
+
+        let result = loginViewController.checkTextField()
+        XCTAssertEqual(false, result)
+    }
 
 }

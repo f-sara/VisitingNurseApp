@@ -12,7 +12,7 @@
 		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
 		8B4364792C39363900760578 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364782C39363900760578 /* LoginModel.swift */; };
 		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
-		8BBE922D2C3A5B6900E476D1 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
+		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
 		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
 		8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* ViewController.swift */; };
@@ -347,7 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */,
-				8BBE922D2C3A5B6900E476D1 /* LoginTests.swift in Sources */,
+				8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

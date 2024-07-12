@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginPresenterOutput {
+final class LoginViewController: UIViewController, LoginPresenterOutput {
 
     private var presenter: LoginPresenter!
 
@@ -17,7 +17,6 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         presenter = LoginPresenter(output: self, model: LoginModel())
     }
 
@@ -25,8 +24,18 @@ class LoginViewController: UIViewController, LoginPresenterOutput {
         showMainCalendar()
     }
 
+    /// いずれかの TextField が空欄の場合 true を返す
+    func checkTextField() -> Bool {
+        if codeTextField.text?.isEmpty ?? true ||
+           userTextField.text?.isEmpty ?? true ||
+           passwordTextField.text?.isEmpty ?? true {
+            return true
+        }
+        return false
+    }
+
     func showMainCalendar() {
-        if codeTextField.text?.isEmpty ?? true || userTextField.text?.isEmpty ?? true || passwordTextField.text?.isEmpty ?? true {
+        if checkTextField() {
             return
         }
         if presenter.loginAuth() {

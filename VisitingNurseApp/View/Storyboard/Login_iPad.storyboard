@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login_iPad" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +163,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dt3-fk-QER"/>
                     <connections>
-                        <outlet property="codeTextField" destination="dcu-d9-XFF" id="Ke4-ig-oTx"/>
+                        <outlet property="codeTextField" destination="dcu-d9-XFF" id="rLT-it-Xqq"/>
                         <outlet property="passwordTextField" destination="p6F-o7-Qrd" id="uqh-bS-u8q"/>
                         <outlet property="userTextField" destination="PuU-hy-KWV" id="2X0-t4-tVg"/>
                         <segue destination="dpF-9j-u75" kind="push" identifier="showMainCalendar" id="GuO-YW-kRD"/>
