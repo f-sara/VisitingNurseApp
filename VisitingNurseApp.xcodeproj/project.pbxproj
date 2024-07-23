@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */; };
+		8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4364702C39112000760578 /* Login_iPad.storyboard */; };
+		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
+		8B4364792C39363900760578 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364782C39363900760578 /* LoginModel.swift */; };
+		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
+		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
 		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
 		8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* ViewController.swift */; };
@@ -36,11 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8B4364702C39112000760578 /* Login_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login_iPad.storyboard; sourceTree = "<group>"; };
+		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B4364782C39363900760578 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BD378E62C2BBBB8003468A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainCalendar.storyboard; sourceTree = "<group>"; };
 		8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD378EE2C2BBBBA003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BD378F02C2BBBBA003468A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B26E2452C3CCCBB00B8F72B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8B4364742C3935F800760578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B26E2452C3CCCBB00B8F72B /* Presenter */,
+				8B4364762C39360C00760578 /* ViewController */,
+				8B4364752C39360200760578 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B4364752C39360200760578 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */,
+				8B4364702C39112000760578 /* Login_iPad.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8B4364762C39360C00760578 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
+				8B4364722C39216C00760578 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8B4364772C39362700760578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B4364782C39363900760578 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B5643512C3F6D230077E2A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BD378D62C2BBBB8003468A7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +146,7 @@
 				8BD378F82C2BBBBA003468A7 /* VisitingNurseAppTests */,
 				8BD379022C2BBBBA003468A7 /* VisitingNurseAppUITests */,
 				8BD378E02C2BBBB8003468A7 /* Products */,
+				8B5643512C3F6D230077E2A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +165,8 @@
 			children = (
 				8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */,
 				8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */,
-				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
-				8BD378E82C2BBBB8003468A7 /* Main.storyboard */,
+				8B4364742C3935F800760578 /* View */,
+				8B4364772C39362700760578 /* Model */,
 				8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */,
 				8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */,
 				8BD378F02C2BBBBA003468A7 /* Info.plist */,
@@ -114,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */,
+				8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */,
 			);
 			path = VisitingNurseAppTests;
 			sourceTree = "<group>";
@@ -141,9 +206,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				8B56434F2C3F6C880077E2A5 /* PBXTargetDependency */,
 			);
 			name = VisitingNurseApp;
 			packageProductDependencies = (
+				8B5643522C3F6D780077E2A5 /* RswiftLibrary */,
 			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
@@ -238,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
 				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
 				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
 				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
@@ -265,6 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */,
+				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
+				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
 				8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
 				8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */,
@@ -276,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */,
+				8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +363,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8B56434F2C3F6C880077E2A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8B56434E2C3F6C880077E2A5 /* RswiftGenerateInternalResources */;
+		};
 		8BD378F72C2BBBBA003468A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8BD378DE2C2BBBB8003468A7 /* VisitingNurseApp */;
@@ -304,12 +380,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BD378E82C2BBBB8003468A7 /* Main.storyboard */ = {
+		8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8BD378E92C2BBBB8003468A7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainCalendar.storyboard;
 			sourceTree = "<group>";
 		};
 		8BD378ED2C2BBBBA003468A7 /* LaunchScreen.storyboard */ = {
@@ -454,7 +530,7 @@
 				INFOPLIST_FILE = VisitingNurseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainCalendar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,7 +558,7 @@
 				INFOPLIST_FILE = VisitingNurseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainCalendar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGJJ9A3WD8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,7 +603,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGJJ9A3WD8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sa.fujii.68.VisitingNurseAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,6 +717,18 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B56434E2C3F6C880077E2A5 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		8B5643522C3F6D780077E2A5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BD378D72C2BBBB8003468A7 /* Project object */;
 }
