@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */; };
 		8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */; };
 		8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4364702C39112000760578 /* Login_iPad.storyboard */; };
 		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		8B4364702C39112000760578 /* Login_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login_iPad.storyboard; sourceTree = "<group>"; };
 		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */,
 				8B4364702C39112000760578 /* Login_iPad.storyboard */,
+				8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 				8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */,
 				8BD379152C2E4C22003468A7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				8B15135D2C529E0C00D3A4B8 /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
 			projectDirPath = "";
@@ -306,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
+				8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */,
 				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
 				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
 				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
@@ -692,6 +697,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8B15135D2C529E0C00D3A4B8 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 		8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
