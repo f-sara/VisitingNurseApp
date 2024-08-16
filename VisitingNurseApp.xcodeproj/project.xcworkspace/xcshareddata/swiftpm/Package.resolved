@@ -1,5 +1,5 @@
 {
-  "originHash" : "f2acbae30fb88911b45d508017bac5145e16dedc3074d495265e63a13b29bc25",
+  "originHash" : "9027f39eacc96f1d7931d6add552d0355ef8f204c1623690dc5a7f3bd784f7a2",
   "pins" : [
     {
       "identity" : "fscalendar",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "384eab88d1a0b98ac96f4819e50a4308ecd5359f",
         "version" : "7.5.0"
+      }
+    },
+    {
+      "identity" : "sidemenu",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jonkykong/SideMenu.git",
+      "state" : {
+        "revision" : "8bd4fd128923cf5494fa726839af8afe12908ad9",
+        "version" : "6.5.0"
       }
     },
     {
