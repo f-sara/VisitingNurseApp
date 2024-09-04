@@ -25,6 +25,8 @@
 		8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */; };
 		8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF7EE022C86CF2A00E30172 /* SideMenu */; };
 		8BF7EE062C86D61800E30172 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE052C86D61800E30172 /* SideMenuViewController.swift */; };
+		8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */; };
+		8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITests.swift; sourceTree = "<group>"; };
 		8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8BF7EE052C86D61800E30172 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				8B26E2452C3CCCBB00B8F72B /* Presenter */,
 				8B4364762C39360C00760578 /* ViewController */,
 				8B4364752C39360200760578 /* Storyboard */,
+				8BF7EE092C87EEF100E30172 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +203,15 @@
 				8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */,
 			);
 			path = VisitingNurseAppUITests;
+			sourceTree = "<group>";
+		};
+		8BF7EE092C87EEF100E30172 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */,
+				8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +332,7 @@
 				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
 				8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */,
 				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
+				8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */,
 				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
 				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
 			);
@@ -347,6 +362,7 @@
 				8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */,
 				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
+				8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */,
 				8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */,
 				8BF7EE062C86D61800E30172 /* SideMenuViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
