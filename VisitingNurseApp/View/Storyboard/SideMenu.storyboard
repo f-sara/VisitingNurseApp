@@ -8,10 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Side Menu Table View Controller-->
         <scene sceneID="gDP-1e-sws">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ce-g2-KIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="gwl-LF-lV7" customClass="SideMenuTableViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="U7C-20-Ngb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -22,8 +21,12 @@
                             <outlet property="delegate" destination="gwl-LF-lV7" id="fCz-TM-8n2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4FP-1r-lH2"/>
+                    <navigationItem key="navigationItem" id="4FP-1r-lH2"/>
+                    <connections>
+                        <outlet property="tableView" destination="U7C-20-Ngb" id="3S1-Ql-wh0"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ce-g2-KIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-274" y="-104"/>
         </scene>

@@ -9,31 +9,46 @@ import UIKit
 
 class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let labelText = ["カレンダー", "患者", "職員情報", "経営数値"]
-    let iconImage = [UIImage(named: R.image.calendar.name), UIImage(named: R.image.contactRound.name), UIImage(named: R.image.users.name), UIImage(named: R.image.chartColumnIncreasing.name)]
-
+    @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(UINib(nibName: R.nib.sideMenuTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.sideMenuTableViewCell.name)
+        tableView.rowHeight = 50
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // セルを取得する
-        let cell: SideMenuTableViewCell = tableView.dequeueReusableCell(withIdentifier: R.nib.sideMenuTableViewCell.name, for: indexPath) as! SideMenuTableViewCell
-            // セルに表示する値を設定する
-        cell.sideMenuText.text = labelText[indexPath.row]
-        cell.sideMenuIcon.image = iconImage[indexPath.row]
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.sideMenuTableViewCell.name, for: indexPath) as! SideMenuTableViewCell
+        cell.setup(index: indexPath.row)
+        return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 4
+        var identifier: String
+
+        switch indexPath.row {
+        case 0:
+            identifier = R.storyboard.mainCalendar.name
+        case 1:
+            identifier = "SecondViewController"
+        case 2:
+            identifier = ""
+        case 3:
+            identifier = ""
+        default:
+            identifier = R.storyboard.mainCalendar.name
+        }
+
+        let storyboard = UIStoryboard(name: identifier, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
+        navigationController?.pushViewController(viewController, animated: true)
+
+        dismiss(animated: true, completion: nil)
     }
 
 }
