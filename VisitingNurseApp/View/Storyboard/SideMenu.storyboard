@@ -8,33 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Side Menu Table View Controller-->
-        <scene sceneID="gDP-1e-sws">
+        <!--Root View Controller-->
+        <scene sceneID="skX-w1-vQC">
             <objects>
-                <tableViewController id="gwl-LF-lV7" customClass="SideMenuTableViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="U7C-20-Ngb">
+                <tableViewController id="TGy-5f-jCK" customClass="SideMenuTableViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bvb-Hi-2aX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
-                            <outlet property="dataSource" destination="gwl-LF-lV7" id="zHW-WR-5Dx"/>
-                            <outlet property="delegate" destination="gwl-LF-lV7" id="fCz-TM-8n2"/>
+                            <outlet property="dataSource" destination="TGy-5f-jCK" id="9id-TR-7cq"/>
+                            <outlet property="delegate" destination="TGy-5f-jCK" id="VkJ-IE-0A6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4FP-1r-lH2"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="S3w-JK-n18"/>
                     <connections>
-                        <outlet property="tableView" destination="U7C-20-Ngb" id="3S1-Ql-wh0"/>
+                        <outlet property="tableView" destination="bvb-Hi-2aX" id="yBI-qo-UuQ"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ce-g2-KIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxC-vm-eKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="-104"/>
+            <point key="canvasLocation" x="-327" y="-111"/>
         </scene>
         <!--Side Menu Navigation Controller-->
-        <scene sceneID="jq6-YA-CLE">
+        <scene sceneID="gaf-gJ-e7h">
             <objects>
-                <navigationController storyboardIdentifier="SideMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fTc-e8-NRZ" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9DC-N8-v4j">
+                <navigationController storyboardIdentifier="SideMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jdr-LN-Zc9" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gE5-C0-1rN">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,12 +42,12 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="gwl-LF-lV7" kind="relationship" relationship="rootViewController" id="Bvq-rF-Qd3"/>
+                        <segue destination="TGy-5f-jCK" kind="relationship" relationship="rootViewController" id="f7T-72-nES"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7a9-Kf-GRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQX-8q-cHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1181" y="-104"/>
+            <point key="canvasLocation" x="-1232" y="-111"/>
         </scene>
     </scenes>
     <resources>

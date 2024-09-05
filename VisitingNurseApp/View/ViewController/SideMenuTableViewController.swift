@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -35,20 +36,26 @@ class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITa
         case 0:
             identifier = R.storyboard.mainCalendar.name
         case 1:
-            identifier = "SecondViewController"
+            identifier = R.storyboard.patientList.name
         case 2:
-            identifier = ""
+            identifier = R.storyboard.staffList.name
         case 3:
-            identifier = ""
+            identifier = R.storyboard.laborManagement.name
         default:
             identifier = R.storyboard.mainCalendar.name
         }
 
-        let storyboard = UIStoryboard(name: identifier, bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
-        navigationController?.pushViewController(viewController, animated: true)
 
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true) {
+            self.showView(identifier: identifier)
+        }
+
     }
+
+    func showView(identifier: String) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        appDelegate.switchViewController(identifier: identifier)
+    }
+
 
 }

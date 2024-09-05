@@ -15,7 +15,6 @@
 		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
 		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
-		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
 		8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* MainViewController.swift */; };
 		8BD378EA2C2BBBB8003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378E92C2BBBB8003468A7 /* Base */; };
 		8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */; };
@@ -61,7 +60,6 @@
 		8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BD378E62C2BBBB8003468A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainCalendar.storyboard; sourceTree = "<group>"; };
 		8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */,
-				8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */,
 				8B4364742C3935F800760578 /* View */,
 				8B4364772C39362700760578 /* Model */,
 				8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */,
@@ -388,7 +385,6 @@
 				8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
 				8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */,
-				8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */,
 				8BF7EE202C882AC500E30172 /* LaborManagementViewController.swift in Sources */,
 				8BF7EE162C882A0E00E30172 /* PatientListViewController.swift in Sources */,
 			);
