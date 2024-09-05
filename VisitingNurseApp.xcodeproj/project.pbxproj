@@ -24,9 +24,15 @@
 		8BD379042C2BBBBA003468A7 /* VisitingNurseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */; };
 		8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */; };
 		8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF7EE022C86CF2A00E30172 /* SideMenu */; };
-		8BF7EE062C86D61800E30172 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE052C86D61800E30172 /* SideMenuViewController.swift */; };
+		8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */; };
 		8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */; };
 		8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */; };
+		8BF7EE162C882A0E00E30172 /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */; };
+		8BF7EE1A2C882A3E00E30172 /* PatientList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE192C882A3E00E30172 /* PatientList.storyboard */; };
+		8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */; };
+		8BF7EE1E2C882A6900E30172 /* StaffList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */; };
+		8BF7EE202C882AC500E30172 /* LaborManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */; };
+		8BF7EE222C882AD300E30172 /* LaborManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +72,15 @@
 		8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingNurseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITests.swift; sourceTree = "<group>"; };
 		8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8BF7EE052C86D61800E30172 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientListViewController.swift; path = VisitingNurseApp/View/ViewController/PatientListViewController.swift; sourceTree = SOURCE_ROOT; };
+		8BF7EE192C882A3E00E30172 /* PatientList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientList.storyboard; sourceTree = "<group>"; };
+		8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListViewController.swift; sourceTree = "<group>"; };
+		8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaffList.storyboard; sourceTree = "<group>"; };
+		8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborManagementViewController.swift; sourceTree = "<group>"; };
+		8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaborManagement.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */,
+				8BF7EE192C882A3E00E30172 /* PatientList.storyboard */,
+				8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */,
+				8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */,
 				8B4364702C39112000760578 /* Login_iPad.storyboard */,
 				8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */,
 			);
@@ -132,7 +147,10 @@
 			children = (
 				8BD378E62C2BBBB8003468A7 /* MainViewController.swift */,
 				8B4364722C39216C00760578 /* LoginViewController.swift */,
-				8BF7EE052C86D61800E30172 /* SideMenuViewController.swift */,
+				8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */,
+				8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */,
+				8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */,
+				8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -331,7 +349,10 @@
 			files = (
 				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
 				8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */,
+				8BF7EE1A2C882A3E00E30172 /* PatientList.storyboard in Resources */,
+				8BF7EE1E2C882A6900E30172 /* StaffList.storyboard in Resources */,
 				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
+				8BF7EE222C882AD300E30172 /* LaborManagement.storyboard in Resources */,
 				8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */,
 				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
 				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
@@ -364,9 +385,12 @@
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
 				8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */,
 				8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */,
-				8BF7EE062C86D61800E30172 /* SideMenuViewController.swift in Sources */,
+				8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
+				8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */,
 				8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */,
+				8BF7EE202C882AC500E30172 /* LaborManagementViewController.swift in Sources */,
+				8BF7EE162C882A0E00E30172 /* PatientListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
