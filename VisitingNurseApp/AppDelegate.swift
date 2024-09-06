@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func switchViewController(identifier: String) {
+    func switchView(identifier: String) {
         UIView.transition(with: self.window!, duration: 1, animations: {
             let oldState: Bool = UIView.areAnimationsEnabled
             UIView.setAnimationsEnabled(false)

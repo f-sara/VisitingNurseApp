@@ -44,7 +44,7 @@ final class LoginViewController: UIViewController, LoginPresenterOutput {
         if presenter.loginAuth() {
 
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-            appDelegate.switchViewController(identifier: R.storyboard.mainCalendar.name)
+            appDelegate.switchView(identifier: R.storyboard.mainCalendar.name)
 //            performSegue(withIdentifier: R.segue.loginViewController.showMainCalendar, sender: nil)
         }
     }

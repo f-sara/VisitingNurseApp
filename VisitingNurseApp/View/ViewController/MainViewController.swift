@@ -9,11 +9,18 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var showSideMenuButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationController?.setNavigationBarHidden(true, animated: false)
-        
+        buttonSetUp()
+    }
+
+    private func buttonSetUp() {
+        showSideMenuButton.setImage(R.image.menu(), for: .normal)
+        showSideMenuButton.tintColor = R.color.accentColor()
     }
 
 

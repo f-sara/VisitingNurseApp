@@ -54,7 +54,7 @@ class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITa
 
     func showView(identifier: String) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        appDelegate.switchViewController(identifier: identifier)
+        appDelegate.switchView(identifier: identifier)
     }
 
 
