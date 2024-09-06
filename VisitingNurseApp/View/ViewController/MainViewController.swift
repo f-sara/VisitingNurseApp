@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class MainViewController: UIViewController {
 
@@ -13,16 +14,20 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         navigationController?.setNavigationBarHidden(true, animated: false)
-        buttonSetUp()
+    }
+}
+
+extension MainViewController: SideMenuNavigationControllerDelegate {
+
+    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+        print("SideMenu Appearing! (animated: \(animated))")
+        showSideMenuButton.isHidden = true
     }
 
-    private func buttonSetUp() {
-        showSideMenuButton.setImage(R.image.menu(), for: .normal)
-        showSideMenuButton.tintColor = R.color.accentColor()
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        print("SideMenu Disappearing! (animated: \(animated))")
+        showSideMenuButton.isHidden = false
     }
-
-
 }
 

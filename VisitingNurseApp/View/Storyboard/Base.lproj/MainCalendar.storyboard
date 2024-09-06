@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,31 +19,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XSA-nd-3Q1">
-                                <rect key="frame" x="0.0" y="0.0" width="1032" height="80"/>
+                                <rect key="frame" x="0.0" y="24" width="1032" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4v-2S-Kqp">
-                                        <rect key="frame" x="0.0" y="0.0" width="1032" height="80"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="menu">
-                                            <color key="baseForegroundColor" name="AccentColor"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4v-2S-Kqp">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="110"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="menu">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="XNv-M7-coD" kind="presentation" id="c7x-PS-DSb"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q91-xR-4q7">
+                                        <rect key="frame" x="103" y="0.0" width="929" height="110"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" name="BrightWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="SQD-S3-2kd"/>
+                                    <constraint firstItem="Q91-xR-4q7" firstAttribute="width" secondItem="XSA-nd-3Q1" secondAttribute="width" multiplier="0.9:1" id="oCs-gn-7nL"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="background"/>
+                        <color key="backgroundColor" name="BrightWhite"/>
                         <constraints>
                             <constraint firstItem="XSA-nd-3Q1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="75i-ws-Orj"/>
                             <constraint firstItem="XSA-nd-3Q1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dce-gM-Urt"/>
-                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vBC-tx-Mar"/>
+                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="kNc-qs-NSh"/>
+                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vBC-tx-Mar"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,8 +76,8 @@
         <namedColor name="BrightWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="background">
-            <color red="0.89803921568627454" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

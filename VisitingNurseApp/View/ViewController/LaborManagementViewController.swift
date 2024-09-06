@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import SideMenu
 
 class LaborManagementViewController: UIViewController {
+
+    @IBOutlet weak var showSideMenuButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,3 +30,17 @@ class LaborManagementViewController: UIViewController {
     */
 
 }
+
+extension LaborManagementViewController: SideMenuNavigationControllerDelegate {
+
+    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+        print("SideMenu Appearing! (animated: \(animated))")
+        showSideMenuButton.isHidden = true
+    }
+
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        print("SideMenu Disappearing! (animated: \(animated))")
+        showSideMenuButton.isHidden = false
+    }
+}
+

@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var storyboard: UIStoryboard {
         if loginFlag {
-            print(R.storyboard.login_iPad.name)
             return UIStoryboard(name: R.storyboard.login_iPad.name, bundle: nil)
 
         } else {
