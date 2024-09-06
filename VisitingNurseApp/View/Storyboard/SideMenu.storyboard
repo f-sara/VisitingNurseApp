@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Side Menu Table View Controller-->
         <scene sceneID="skX-w1-vQC">
             <objects>
                 <tableViewController id="TGy-5f-jCK" customClass="SideMenuTableViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                             <outlet property="delegate" destination="TGy-5f-jCK" id="VkJ-IE-0A6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="S3w-JK-n18"/>
+                    <navigationItem key="navigationItem" id="S3w-JK-n18"/>
                     <connections>
                         <outlet property="tableView" destination="bvb-Hi-2aX" id="yBI-qo-UuQ"/>
                     </connections>
