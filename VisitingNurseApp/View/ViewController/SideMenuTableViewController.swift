@@ -10,6 +10,27 @@ import SideMenu
 
 class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    enum ViewIdentifier: Int {
+        case mainCalendar
+        case patientList
+        case staffList
+        case laborManagement
+
+        var identifier: String {
+            switch self {
+            case .mainCalendar:
+                R.storyboard.mainCalendar.name
+            case .patientList:
+                R.storyboard.patientList.name
+            case .staffList:
+                R.storyboard.staffList.name
+            case .laborManagement:
+                R.storyboard.laborManagement.name
+            }
+        }
+
+    }
+
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -29,25 +50,10 @@ class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        var identifier: String
-
-        switch indexPath.row {
-        case 0:
-            identifier = R.storyboard.mainCalendar.name
-        case 1:
-            identifier = R.storyboard.patientList.name
-        case 2:
-            identifier = R.storyboard.staffList.name
-        case 3:
-            identifier = R.storyboard.laborManagement.name
-        default:
-            identifier = R.storyboard.mainCalendar.name
-        }
-
+        guard let index = ViewIdentifier(rawValue: indexPath.row) else {return}
 
         dismiss(animated: true) {
-            self.showView(identifier: identifier)
+            self.showView(identifier: index.identifier)
         }
 
     }
