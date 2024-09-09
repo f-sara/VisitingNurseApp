@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class LaborManagementViewController: UIViewController {
+final class LaborManagementViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
 

@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
 

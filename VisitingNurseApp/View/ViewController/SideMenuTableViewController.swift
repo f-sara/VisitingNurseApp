@@ -8,9 +8,9 @@
 import UIKit
 import SideMenu
 
-class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    enum ViewIdentifier: Int {
+    private enum ViewIdentifier: Int {
         case mainCalendar
         case patientList
         case staffList
@@ -33,6 +33,8 @@ class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITa
 
     @IBOutlet var tableView: UITableView!
 
+    private var tableRow = 4
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: R.nib.sideMenuTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.sideMenuTableViewCell.name)
@@ -40,7 +42,7 @@ class SideMenuTableViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return tableRow
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

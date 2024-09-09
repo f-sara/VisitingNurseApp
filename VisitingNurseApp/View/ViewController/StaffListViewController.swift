@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class StaffListViewController: UIViewController {
+final class StaffListViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
 

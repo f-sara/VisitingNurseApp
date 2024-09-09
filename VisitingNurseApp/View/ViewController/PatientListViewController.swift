@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class PatientListViewController: UIViewController {
+final class PatientListViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
 
