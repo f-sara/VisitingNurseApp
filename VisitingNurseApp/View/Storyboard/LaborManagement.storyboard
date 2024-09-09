@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Labor Management View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LaborManagement" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LaborManagementViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="EVV-Mi-QzM">
+                                <rect key="frame" x="0.0" y="59" width="393" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpP-gy-bof">
+                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="68"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="menu">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="aXe-3k-Gty" kind="presentation" id="bp7-JF-Hyq"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYE-5w-wZX">
+                                        <rect key="frame" x="39.333333333333343" y="0.0" width="353.66666666666663" height="68"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="BrightWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MYE-5w-wZX" firstAttribute="width" secondItem="EVV-Mi-QzM" secondAttribute="width" multiplier="0.9:1" id="OtS-qX-Ubh"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="経営数値" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiq-Mb-wNS">
+                                <rect key="frame" x="164.66666666666666" y="416" width="63.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EVV-Mi-QzM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Kds-V9-Ujn"/>
+                            <constraint firstItem="wiq-Mb-wNS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Nub-Nb-e8J"/>
+                            <constraint firstItem="EVV-Mi-QzM" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.08" id="Sj8-uI-3DQ"/>
+                            <constraint firstItem="EVV-Mi-QzM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Vln-je-Lg5"/>
+                            <constraint firstItem="wiq-Mb-wNS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hKK-rq-sT4"/>
+                            <constraint firstItem="EVV-Mi-QzM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sWz-5B-CGT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gdL-er-UWx"/>
+                    <connections>
+                        <outlet property="showSideMenuButton" destination="CpP-gy-bof" id="kTI-bM-hyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.3969465648854" y="-2.1126760563380285"/>
+        </scene>
+        <!--SideMenu-->
+        <scene sceneID="6Cx-fY-jFp">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SideMenu" storyboardName="SideMenu" referencedIdentifier="SideMenu" id="aXe-3k-Gty" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1R-2W-Xdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.30199998617172241" green="0.53700000047683716" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrightWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

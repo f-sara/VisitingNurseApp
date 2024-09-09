@@ -14,10 +14,13 @@ final class LoginViewController: UIViewController, LoginPresenterOutput {
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = LoginPresenter(output: self, model: LoginModel())
+        loginButton.backgroundColor = R.color.accentColor()
+        loginButton.layer.cornerRadius = 5
     }
 
     @IBAction func loginButton(_ sender: Any) {
@@ -39,7 +42,10 @@ final class LoginViewController: UIViewController, LoginPresenterOutput {
             return
         }
         if presenter.loginAuth() {
-            performSegue(withIdentifier: R.segue.loginViewController.showMainCalendar, sender: nil)
+
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            appDelegate.switchView(identifier: R.storyboard.mainCalendar.name)
+//            performSegue(withIdentifier: R.segue.loginViewController.showMainCalendar, sender: nil)
         }
     }
 }

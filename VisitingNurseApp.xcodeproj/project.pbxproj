@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */; };
 		8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */; };
 		8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4364702C39112000760578 /* Login_iPad.storyboard */; };
 		8B4364732C39216C00760578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364722C39216C00760578 /* LoginViewController.swift */; };
@@ -14,14 +15,23 @@
 		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
 		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
-		8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */; };
-		8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* ViewController.swift */; };
+		8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* MainViewController.swift */; };
 		8BD378EA2C2BBBB8003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378E92C2BBBB8003468A7 /* Base */; };
 		8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */; };
 		8BD378EF2C2BBBBA003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378EE2C2BBBBA003468A7 /* Base */; };
 		8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */; };
 		8BD379042C2BBBBA003468A7 /* VisitingNurseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */; };
 		8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */; };
+		8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF7EE022C86CF2A00E30172 /* SideMenu */; };
+		8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */; };
+		8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */; };
+		8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */; };
+		8BF7EE162C882A0E00E30172 /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */; };
+		8BF7EE1A2C882A3E00E30172 /* PatientList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE192C882A3E00E30172 /* PatientList.storyboard */; };
+		8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */; };
+		8BF7EE1E2C882A6900E30172 /* StaffList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */; };
+		8BF7EE202C882AC500E30172 /* LaborManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */; };
+		8BF7EE222C882AD300E30172 /* LaborManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		8B26E2462C3CCCCB00B8F72B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		8B4364702C39112000760578 /* Login_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login_iPad.storyboard; sourceTree = "<group>"; };
 		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +60,7 @@
 		8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BD378E62C2BBBB8003468A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BD378E62C2BBBB8003468A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8BD378E92C2BBBB8003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainCalendar.storyboard; sourceTree = "<group>"; };
 		8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BD378EE2C2BBBBA003468A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +70,15 @@
 		8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingNurseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITests.swift; sourceTree = "<group>"; };
 		8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientListViewController.swift; path = VisitingNurseApp/View/ViewController/PatientListViewController.swift; sourceTree = SOURCE_ROOT; };
+		8BF7EE192C882A3E00E30172 /* PatientList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientList.storyboard; sourceTree = "<group>"; };
+		8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListViewController.swift; sourceTree = "<group>"; };
+		8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StaffList.storyboard; sourceTree = "<group>"; };
+		8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborManagementViewController.swift; sourceTree = "<group>"; };
+		8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaborManagement.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */,
 				8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +122,7 @@
 				8B26E2452C3CCCBB00B8F72B /* Presenter */,
 				8B4364762C39360C00760578 /* ViewController */,
 				8B4364752C39360200760578 /* Storyboard */,
+				8BF7EE092C87EEF100E30172 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,7 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				8BD378E82C2BBBB8003468A7 /* MainCalendar.storyboard */,
+				8BF7EE192C882A3E00E30172 /* PatientList.storyboard */,
+				8BF7EE212C882AD300E30172 /* LaborManagement.storyboard */,
+				8BF7EE1D2C882A6900E30172 /* StaffList.storyboard */,
 				8B4364702C39112000760578 /* Login_iPad.storyboard */,
+				8B15135E2C529EF800D3A4B8 /* SideMenu.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -118,8 +143,12 @@
 		8B4364762C39360C00760578 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8BD378E62C2BBBB8003468A7 /* ViewController.swift */,
+				8BD378E62C2BBBB8003468A7 /* MainViewController.swift */,
 				8B4364722C39216C00760578 /* LoginViewController.swift */,
+				8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */,
+				8BF7EE142C882A0E00E30172 /* PatientListViewController.swift */,
+				8BF7EE1B2C882A5C00E30172 /* StaffListViewController.swift */,
+				8BF7EE1F2C882AC500E30172 /* LaborManagementViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -164,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */,
-				8BD378E42C2BBBB8003468A7 /* SceneDelegate.swift */,
 				8B4364742C3935F800760578 /* View */,
 				8B4364772C39362700760578 /* Model */,
 				8BD378EB2C2BBBBA003468A7 /* Assets.xcassets */,
@@ -192,6 +220,15 @@
 			path = VisitingNurseAppUITests;
 			sourceTree = "<group>";
 		};
+		8BF7EE092C87EEF100E30172 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */,
+				8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +248,7 @@
 			name = VisitingNurseApp;
 			packageProductDependencies = (
 				8B5643522C3F6D780077E2A5 /* RswiftLibrary */,
+				8BF7EE022C86CF2A00E30172 /* SideMenu */,
 			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
@@ -288,6 +326,7 @@
 				8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 				8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */,
 				8BD379152C2E4C22003468A7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				8B15135D2C529E0C00D3A4B8 /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			productRefGroup = 8BD378E02C2BBBB8003468A7 /* Products */;
 			projectDirPath = "";
@@ -306,7 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
+				8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */,
+				8BF7EE1A2C882A3E00E30172 /* PatientList.storyboard in Resources */,
+				8BF7EE1E2C882A6900E30172 /* StaffList.storyboard in Resources */,
 				8BD378EC2C2BBBBA003468A7 /* Assets.xcassets in Resources */,
+				8BF7EE222C882AD300E30172 /* LaborManagement.storyboard in Resources */,
+				8BF7EE0D2C87F10800E30172 /* SideMenuTableViewCell.xib in Resources */,
 				8BD378EF2C2BBBBA003468A7 /* Base in Resources */,
 				8BD378EA2C2BBBB8003468A7 /* Base in Resources */,
 			);
@@ -336,9 +380,13 @@
 				8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */,
 				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
-				8BD378E72C2BBBB8003468A7 /* ViewController.swift in Sources */,
+				8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */,
+				8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */,
+				8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
-				8BD378E52C2BBBB8003468A7 /* SceneDelegate.swift in Sources */,
+				8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */,
+				8BF7EE202C882AC500E30172 /* LaborManagementViewController.swift in Sources */,
+				8BF7EE162C882A0E00E30172 /* PatientListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +740,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8B15135D2C529E0C00D3A4B8 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 		8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
@@ -727,6 +783,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = RswiftLibrary;
+		};
+		8BF7EE022C86CF2A00E30172 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B15135D2C529E0C00D3A4B8 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
