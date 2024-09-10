@@ -9,9 +9,21 @@ import UIKit
 
 class StaffTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var areaColor: UIImageView!
+    @IBOutlet weak var staffNameLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var areaLabel: UILabel!
+    @IBOutlet weak var departmentLabel: UILabel!
+    @IBOutlet weak var teamLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+
+    func setUI() {
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
