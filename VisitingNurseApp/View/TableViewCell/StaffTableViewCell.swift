@@ -9,6 +9,7 @@ import UIKit
 
 class StaffTableViewCell: UITableViewCell {
 
+
     @IBOutlet weak var areaColor: UIImageView!
     @IBOutlet weak var staffNameLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
