@@ -42,7 +42,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O6d-we-1E4">
-                                <rect key="frame" x="16" y="184" width="1000" height="1156"/>
+                                <rect key="frame" x="25" y="184" width="982" height="1156"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="BVV-2b-BEk"/>
@@ -54,12 +54,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gCK-3K-SkX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="41u-Q3-La7"/>
-                            <constraint firstItem="O6d-we-1E4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="MBT-P0-bNl"/>
+                            <constraint firstItem="O6d-we-1E4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="MBT-P0-bNl"/>
                             <constraint firstItem="O6d-we-1E4" firstAttribute="top" secondItem="gCK-3K-SkX" secondAttribute="bottom" constant="50" id="U6Y-TU-TFc"/>
                             <constraint firstItem="gCK-3K-SkX" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.08" id="b4I-ng-z7P"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="O6d-we-1E4" secondAttribute="bottom" constant="16" id="dWY-ZX-azC"/>
                             <constraint firstItem="gCK-3K-SkX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dlw-u5-u0y"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O6d-we-1E4" secondAttribute="trailing" constant="16" id="scG-ts-ADA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O6d-we-1E4" secondAttribute="trailing" constant="25" id="scG-ts-ADA"/>
                             <constraint firstItem="gCK-3K-SkX" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="yPW-Uj-a7y"/>
                         </constraints>
                     </view>
