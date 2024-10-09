@@ -16,6 +16,7 @@ final class StaffListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
+        tableView.register(UINib(nibName: R.nib.topStaffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.topStaffTableViewCell.name)
     }
 
 }
@@ -26,8 +27,13 @@ extension StaffListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.staffTableViewCell.name, for: indexPath) as! StaffTableViewCell
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.topStaffTableViewCell.name, for: indexPath) as! TopStaffTableViewCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.staffTableViewCell.name, for: indexPath) as! StaffTableViewCell
+            return cell
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -39,12 +45,10 @@ extension StaffListViewController: UITableViewDelegate, UITableViewDataSource {
 extension StaffListViewController: SideMenuNavigationControllerDelegate {
 
     func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
         showSideMenuButton.isHidden = true
     }
 
     func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
         showSideMenuButton.isHidden = false
     }
 }
