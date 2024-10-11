@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="15E-OQ-yiY">
-                        <rect key="frame" x="10" y="0.0" width="613" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="623" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-07-V3L">
-                                <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="名前" image="chevron.up.chevron.down" catalog="system">
@@ -30,7 +30,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nq-Yp-IDe">
-                                <rect key="frame" x="102.33333333333331" y="0.0" width="102" height="44"/>
+                                <rect key="frame" x="104" y="0.0" width="103.66666666666669" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="役職" image="chevron.up.chevron.down" catalog="system">
@@ -38,7 +38,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spo-EL-Ddg">
-                                <rect key="frame" x="204.33333333333334" y="0.0" width="102.33333333333334" height="44"/>
+                                <rect key="frame" x="207.66666666666663" y="0.0" width="104" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="部署" image="chevron.up.chevron.down" catalog="system">
@@ -46,7 +46,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-TF-7ve">
-                                <rect key="frame" x="306.66666666666669" y="0.0" width="102" height="44"/>
+                                <rect key="frame" x="311.66666666666669" y="0.0" width="103.66666666666669" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="エリア" image="chevron.up.chevron.down" catalog="system">
@@ -54,7 +54,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTk-eT-de3">
-                                <rect key="frame" x="408.66666666666669" y="0.0" width="102.33333333333331" height="44"/>
+                                <rect key="frame" x="415.33333333333331" y="0.0" width="103.99999999999994" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="所属チーム" image="chevron.up.chevron.down" catalog="system">
@@ -62,7 +62,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QK8-Sh-Egp">
-                                <rect key="frame" x="511" y="0.0" width="102" height="44"/>
+                                <rect key="frame" x="519.33333333333337" y="0.0" width="103.66666666666663" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="月稼働時間" image="chevron.up.chevron.down" catalog="system">
@@ -76,7 +76,7 @@
                     <constraint firstAttribute="trailing" secondItem="15E-OQ-yiY" secondAttribute="trailing" id="1QV-gl-L9E"/>
                     <constraint firstItem="15E-OQ-yiY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bXf-4i-9HK"/>
                     <constraint firstAttribute="bottom" secondItem="15E-OQ-yiY" secondAttribute="bottom" id="fcm-80-Fer"/>
-                    <constraint firstItem="15E-OQ-yiY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rsC-jf-fCP"/>
+                    <constraint firstItem="15E-OQ-yiY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rsC-jf-fCP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
