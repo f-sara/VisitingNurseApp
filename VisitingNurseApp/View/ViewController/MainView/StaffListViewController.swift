@@ -12,7 +12,8 @@ final class StaffListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showSideMenuButton: UIButton!
-
+    @IBOutlet weak var uptimeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
