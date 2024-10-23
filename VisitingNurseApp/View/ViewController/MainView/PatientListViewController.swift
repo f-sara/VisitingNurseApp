@@ -21,8 +21,8 @@ final class PatientListViewController: UIViewController {
         PatientModel(patientName: "Emily Davis", service: "Occupational Therapy", staffName: "Manager D", area: "垂水区")
     ]
 
-    private var sortedList: [PatientModel] = []
-    private var sortedFlag = false
+    private var filteredList: [PatientModel] = []
+    private var filteredFlag = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,21 +33,21 @@ final class PatientListViewController: UIViewController {
     private func setupAreaButton() {
         areaButton.menu = UIMenu(children: [
             UIAction(title: "すべてのエリア", state: .on, handler:{_ in
-                self.sortedFlag = false
+                self.filteredFlag = false
                 self.tableView.reloadData()
             }),
             UIAction(title: "西区", state: .on, handler:{_ in
-                self.sortedArea(area: "西区")
+                self.filteredArea(area: "西区")
             }),
             UIAction(title: "垂水区", state: .on, handler:{_ in
-                self.sortedArea(area: "垂水区")
+                self.filteredArea(area: "垂水区")
 
             }),
             UIAction(title: "須磨", state: .on, handler:{_ in
-                self.sortedArea(area: "須磨")
+                self.filteredArea(area: "須磨")
             }),
             UIAction(title: "明石", state: .on, handler:{_ in
-                self.sortedArea(area: "明石")
+                self.filteredArea(area: "明石")
             })
 
         ])
@@ -55,17 +55,17 @@ final class PatientListViewController: UIViewController {
         areaButton.changesSelectionAsPrimaryAction = true
     }
 
-    private func sortedArea(area: String) {
-        self.sortedFlag = true
-        self.sortedList = self.patientList.filter { $0.area == area}
+    private func filteredArea(area: String) {
+        self.filteredFlag = true
+        self.filteredList = self.patientList.filter { $0.area == area}
         self.tableView.reloadData()
     }
 }
 
 extension PatientListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if sortedFlag {
-            return sortedList.count
+        if filteredFlag {
+            return filteredList.count
         } else {
             return patientList.count
         }
@@ -74,8 +74,8 @@ extension PatientListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.patientTableViewCell.name, for: indexPath) as! PatientTableViewCell
         var patientModel = self.patientList
-        if sortedFlag {
-            patientModel = self.sortedList
+        if filteredFlag {
+            patientModel = self.filteredList
         }
         cell.setupUI(patientModel: patientModel[indexPath.row])
         return cell
