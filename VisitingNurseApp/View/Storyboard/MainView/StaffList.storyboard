@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -76,12 +77,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="エリア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-Pj-Eth">
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-r0-91t">
                                                 <rect key="frame" x="486" y="0.0" width="162" height="45"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <menu key="menu" id="wAO-qf-nkm">
+                                                    <children>
+                                                        <command title="Item 1" id="R35-NO-95J"/>
+                                                        <command title="Item 2" id="bJ1-0H-d4D"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="所属エリア" image="chevron.up.chevron.down" catalog="system">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所属チーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnO-7b-kZt">
                                                 <rect key="frame" x="648" y="0.0" width="162" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -95,6 +102,9 @@
                                                 <state key="normal" title="月稼働時間" image="chevron.up.chevron.down" catalog="system">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sotedUptime:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v2e-rp-jrc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -127,9 +137,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="3GA-M3-SI0"/>
                     <connections>
+                        <outlet property="areaButton" destination="v1q-r0-91t" id="whQ-Id-yjk"/>
                         <outlet property="showSideMenuButton" destination="zE1-94-co0" id="g0V-A3-Rvw"/>
                         <outlet property="tableView" destination="O6d-we-1E4" id="hO0-TK-EeV"/>
-                        <outlet property="uptimeButton" destination="u0L-vI-2P4" id="vCL-6U-gwv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

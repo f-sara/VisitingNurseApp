@@ -51,8 +51,8 @@ final class PatientListViewController: UIViewController {
             })
 
         ])
-        areaButton.showsMenuAsPrimaryAction = true
-        areaButton.changesSelectionAsPrimaryAction = true
+        areaButton.setTitle("所属エリア", for: .normal)
+        areaButton.changesSelectionAsPrimaryAction = false
     }
 
     private func filteredArea(area: String) {

@@ -74,31 +74,20 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J73-fy-rNT">
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gy1-ZJ-Mxc">
                                                 <rect key="frame" x="729" y="0.0" width="243" height="45"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="エリア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcd-oz-E9V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="45"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gy1-ZJ-Mxc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="3" height="45"/>
-                                                        <menu key="menu" id="6C6-ip-okg">
-                                                            <children>
-                                                                <command title="Item 1" id="sU1-2I-rRx"/>
-                                                                <command title="Item 2" id="XbU-tO-mcr"/>
-                                                            </children>
-                                                        </menu>
-                                                        <state key="normal" title="Button" image="chevron.up.chevron.down" catalog="system"/>
-                                                    </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c56-0g-Fep">
-                                                        <rect key="frame" x="3" y="0.0" width="240" height="45"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <menu key="menu" title="所属エリア" id="6C6-ip-okg">
+                                                    <children>
+                                                        <command title="Item 1" id="sU1-2I-rRx"/>
+                                                        <command title="Item 2" id="XbU-tO-mcr"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="所属エリア" image="chevron.up.chevron.down" catalog="system">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Soc-Y9-fDz">
@@ -153,6 +142,9 @@
         <namedColor name="AccentColor">
             <color red="0.30199998617172241" green="0.53700000047683716" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

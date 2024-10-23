@@ -12,23 +12,67 @@ final class StaffListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showSideMenuButton: UIButton!
-    @IBOutlet weak var uptimeButton: UIButton!
+    @IBOutlet weak var areaButton: UIButton!
 
-    private let staffList: [StaffListModel] = [
+    private var staffList: [StaffListModel] = [
         StaffListModel(area: "西区", staffName: "田中太郎", position: "看護師", department: "訪問看護", team: "Aチーム", uptime: 150),
         StaffListModel(area: "垂水区", staffName: "佐藤花子", position: "理学療法士", department: "リハビリ", team: "Bチーム", uptime: 240),
         StaffListModel(area: "明石", staffName: "山田一郎", position: "作業療法士", department: "リハビリ", team: "Cチーム", uptime: 90),
         StaffListModel(area: "須磨", staffName: "鈴木次郎", position: "看護師", department: "訪問看護", team: "Dチーム", uptime: 180)
     ]
 
+    private var flag: Bool = false
     private var filteredFlag = false
-    private let filteredStaffList: [StaffListModel] = []
+    private var filteredStaffList: [StaffListModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
+        setupAreaButton()
     }
 
+    @IBAction func sotedUptime(_ sender: Any) {
+        if flag == false {
+            staffList.sort { $0.uptime < $1.uptime }
+            flag = true
+        } else if flag == true {
+            //OFFにする時に走らせたい処理
+            staffList.sort { $1.uptime < $0.uptime }
+            flag = false
+        }
+        self.tableView.reloadData()
+    }
+
+    private func setupAreaButton() {
+        areaButton.menu = UIMenu(children: [
+            UIAction(title: "すべてのエリア", state: .on, handler:{_ in
+                self.filteredFlag = false
+                self.tableView.reloadData()
+            }),
+            UIAction(title: "西区", state: .on, handler:{_ in
+                self.filteredArea(area: "西区")
+            }),
+            UIAction(title: "垂水区", state: .on, handler:{_ in
+                self.filteredArea(area: "垂水区")
+
+            }),
+            UIAction(title: "須磨", state: .on, handler:{_ in
+                self.filteredArea(area: "須磨")
+            }),
+            UIAction(title: "明石", state: .on, handler:{_ in
+                self.filteredArea(area: "明石")
+            })
+
+        ])
+        areaButton.setTitle("所属エリア", for: .normal)
+        areaButton.changesSelectionAsPrimaryAction = false
+    }
+
+    private func filteredArea(area: String) {
+        self.filteredFlag = true
+        self.filteredStaffList = self.staffList.filter { $0.area == area}
+        self.tableView.reloadData()
+    }
 }
 
 extension StaffListViewController: UITableViewDelegate, UITableViewDataSource {
