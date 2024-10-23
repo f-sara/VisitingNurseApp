@@ -17,7 +17,6 @@ final class StaffListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
-        tableView.register(UINib(nibName: R.nib.topStaffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.topStaffTableViewCell.name)
     }
 
 }
