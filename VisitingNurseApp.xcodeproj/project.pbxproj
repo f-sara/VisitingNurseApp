@@ -27,6 +27,7 @@
 		8BD378FA2C2BBBBA003468A7 /* VisitingNurseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378F92C2BBBBA003468A7 /* VisitingNurseAppTests.swift */; };
 		8BD379042C2BBBBA003468A7 /* VisitingNurseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */; };
 		8BD379062C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */; };
+		8BDEC4912CC8B01D00BD88C7 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEC4902CC8B01600BD88C7 /* PatientModel.swift */; };
 		8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF7EE022C86CF2A00E30172 /* SideMenu */; };
 		8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */; };
 		8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */; };
@@ -80,6 +81,7 @@
 		8BD378FF2C2BBBBA003468A7 /* VisitingNurseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingNurseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD379032C2BBBBA003468A7 /* VisitingNurseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITests.swift; sourceTree = "<group>"; };
 		8BD379052C2BBBBA003468A7 /* VisitingNurseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingNurseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8BDEC4902CC8B01600BD88C7 /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
 		8BF7EE052C86D61800E30172 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				8B4364782C39363900760578 /* LoginModel.swift */,
 				8B08E7082C8FF848001D95B3 /* StaffModel.swift */,
+				8BDEC4902CC8B01600BD88C7 /* PatientModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			files = (
 				8B08E7092C8FF848001D95B3 /* StaffModel.swift in Sources */,
 				8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */,
+				8BDEC4912CC8B01D00BD88C7 /* PatientModel.swift in Sources */,
 				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
 				8B77FCBE2CC89A9000BB3707 /* PatientTableViewCell.swift in Sources */,
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
