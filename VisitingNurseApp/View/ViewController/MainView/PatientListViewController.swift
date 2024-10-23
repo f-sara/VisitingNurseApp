@@ -14,15 +14,15 @@ final class PatientListViewController: UIViewController {
     @IBOutlet weak var areaButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
 
-    private let patientList: [PatientModel] = [
-        PatientModel(patientName: "John Doe", service: "Nursing", staffName: "Manager A", area: "西区"),
-        PatientModel(patientName: "Jane Smith", service: "Physical Therapy", staffName: "Manager B", area: "須磨"),
-        PatientModel(patientName: "Michael Brown", service: "Speech Therapy", staffName: "Manager C", area: "明石"),
-        PatientModel(patientName: "Emily Davis", service: "Occupational Therapy", staffName: "Manager D", area: "垂水区")
+    private let patientList: [PatientListModel] = [
+        PatientListModel(patientName: "John Doe", service: "Nursing", staffName: "Manager A", area: "西区"),
+        PatientListModel(patientName: "Jane Smith", service: "Physical Therapy", staffName: "Manager B", area: "須磨"),
+        PatientListModel(patientName: "Michael Brown", service: "Speech Therapy", staffName: "Manager C", area: "明石"),
+        PatientListModel(patientName: "Emily Davis", service: "Occupational Therapy", staffName: "Manager D", area: "垂水区")
     ]
 
-    private var filteredList: [PatientModel] = []
     private var filteredFlag = false
+    private var filteredList: [PatientListModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -25,7 +25,7 @@ class PatientTableViewCell: UITableViewCell {
 
     }
 
-    func setupUI(patientModel: PatientModel) {
+    func setupUI(patientModel: PatientListModel) {
         patientNameLabel.text = patientModel.patientName
         areaLabel.text = patientModel.staffName
         serviceLabel.text = patientModel.service

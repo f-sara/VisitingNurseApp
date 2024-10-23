@@ -24,17 +24,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="106" height="44"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vpr-6z-Vb5">
-                                        <rect key="frame" x="0.0" y="0.5" width="16" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="10.5" height="43"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="01T-hR-mWJ" userLabel="StaffName">
-                                        <rect key="frame" x="19" y="0.0" width="87" height="44"/>
+                                        <rect key="frame" x="13.5" y="0.0" width="92.5" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="vpr-6z-Vb5" firstAttribute="width" secondItem="iew-3j-vfn" secondAttribute="width" multiplier="0.15" id="qu8-fH-vwC"/>
+                                    <constraint firstItem="vpr-6z-Vb5" firstAttribute="width" secondItem="iew-3j-vfn" secondAttribute="width" multiplier="0.1" id="qu8-fH-vwC"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9ps-9o-qxS">
