@@ -11,25 +11,55 @@ import SideMenu
 final class PatientListViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
+    @IBOutlet weak var areaButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAreaButton()
+    }
 
-        // Do any additional setup after loading the view.
+    func setupAreaButton() {
+        areaButton.menu = UIMenu(children: [
+                UIAction(title: "西区", state: .on, handler:{_ in
+
+                }),
+                UIAction(title: "垂水区", state: .on, handler:{_ in
+
+                }),
+                UIAction(title: "須磨", state: .on, handler:{_ in
+
+                }),
+                UIAction(title: "明石", state: .on, handler:{_ in
+
+                })
+
+            ])
+        areaButton.showsMenuAsPrimaryAction = true
+        areaButton.changesSelectionAsPrimaryAction = true
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension PatientListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        4
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.staffTableViewCell.name, for: indexPath) as! StaffTableViewCell
+        return cell
+
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return 50
+     }
+
+}
+
 
 extension PatientListViewController: SideMenuNavigationControllerDelegate {
 
