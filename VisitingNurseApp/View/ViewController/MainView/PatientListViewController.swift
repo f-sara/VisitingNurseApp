@@ -14,50 +14,77 @@ final class PatientListViewController: UIViewController {
     @IBOutlet weak var areaButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
 
+    private let patientList: [PatientModel] = [
+        PatientModel(patientName: "John Doe", service: "Nursing", staffName: "Manager A", area: "西区"),
+        PatientModel(patientName: "Jane Smith", service: "Physical Therapy", staffName: "Manager B", area: "須磨"),
+        PatientModel(patientName: "Michael Brown", service: "Speech Therapy", staffName: "Manager C", area: "明石"),
+        PatientModel(patientName: "Emily Davis", service: "Occupational Therapy", staffName: "Manager D", area: "垂水区")
+    ]
+
+    private var sortedList: [PatientModel] = []
+    private var sortedFlag = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAreaButton()
         tableView.register(UINib(nibName: R.nib.patientTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.patientTableViewCell.name)
     }
 
-    func setupAreaButton() {
+    private func setupAreaButton() {
         areaButton.menu = UIMenu(children: [
-                UIAction(title: "西区", state: .on, handler:{_ in
+            UIAction(title: "すべてのエリア", state: .on, handler:{_ in
+                self.sortedFlag = false
+                self.tableView.reloadData()
+            }),
+            UIAction(title: "西区", state: .on, handler:{_ in
+                self.sortedArea(area: "西区")
+            }),
+            UIAction(title: "垂水区", state: .on, handler:{_ in
+                self.sortedArea(area: "垂水区")
 
-                }),
-                UIAction(title: "垂水区", state: .on, handler:{_ in
+            }),
+            UIAction(title: "須磨", state: .on, handler:{_ in
+                self.sortedArea(area: "須磨")
+            }),
+            UIAction(title: "明石", state: .on, handler:{_ in
+                self.sortedArea(area: "明石")
+            })
 
-                }),
-                UIAction(title: "須磨", state: .on, handler:{_ in
-
-                }),
-                UIAction(title: "明石", state: .on, handler:{_ in
-
-                })
-
-            ])
+        ])
         areaButton.showsMenuAsPrimaryAction = true
         areaButton.changesSelectionAsPrimaryAction = true
     }
 
-
-
+    private func sortedArea(area: String) {
+        self.sortedFlag = true
+        self.sortedList = self.patientList.filter { $0.area == area}
+        self.tableView.reloadData()
+    }
 }
 
 extension PatientListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        if sortedFlag {
+            return sortedList.count
+        } else {
+            return patientList.count
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.patientTableViewCell.name, for: indexPath) as! PatientTableViewCell
+        var patientModel = self.patientList
+        if sortedFlag {
+            patientModel = self.sortedList
+        }
+        cell.setupUI(patientModel: patientModel[indexPath.row])
         return cell
 
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-         return 50
-     }
+        return 50
+    }
 
 }
 
