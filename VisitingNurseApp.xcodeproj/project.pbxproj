@@ -17,6 +17,8 @@
 		8B4364792C39363900760578 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4364782C39363900760578 /* LoginModel.swift */; };
 		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
 		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
+		8B77FCBD2CC89A9000BB3707 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */; };
+		8B77FCBE2CC89A9000BB3707 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */; };
 		8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */; };
 		8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD378E62C2BBBB8003468A7 /* MainViewController.swift */; };
 		8BD378EA2C2BBBB8003468A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BD378E92C2BBBB8003468A7 /* Base */; };
@@ -63,6 +65,8 @@
 		8B4364702C39112000760578 /* Login_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login_iPad.storyboard; sourceTree = "<group>"; };
 		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B4364782C39363900760578 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
 		8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitingNurseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD378E22C2BBBB8003468A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 		8BF7EE092C87EEF100E30172 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */,
+				8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */,
 				8BF7EE0B2C87F10800E30172 /* SideMenuTableViewCell.xib */,
 				8BF7EE0A2C87F10800E30172 /* SideMenuTableViewCell.swift */,
 				8B08E7052C8FEC9C001D95B3 /* StaffTableViewCell.xib */,
@@ -369,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B77FCBD2CC89A9000BB3707 /* PatientTableViewCell.xib in Resources */,
 				8B4364712C39112000760578 /* Login_iPad.storyboard in Resources */,
 				8B15135F2C529EF800D3A4B8 /* SideMenu.storyboard in Resources */,
 				8BF7EE1A2C882A3E00E30172 /* PatientList.storyboard in Resources */,
@@ -406,6 +413,7 @@
 				8B08E7092C8FF848001D95B3 /* StaffModel.swift in Sources */,
 				8B26E2472C3CCCCB00B8F72B /* LoginPresenter.swift in Sources */,
 				8B4364792C39363900760578 /* LoginModel.swift in Sources */,
+				8B77FCBE2CC89A9000BB3707 /* PatientTableViewCell.swift in Sources */,
 				8B4364732C39216C00760578 /* LoginViewController.swift in Sources */,
 				8BF7EE0C2C87F10800E30172 /* SideMenuTableViewCell.swift in Sources */,
 				8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */,

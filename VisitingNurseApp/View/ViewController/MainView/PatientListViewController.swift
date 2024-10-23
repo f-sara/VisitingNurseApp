@@ -17,6 +17,7 @@ final class PatientListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAreaButton()
+        tableView.register(UINib(nibName: R.nib.patientTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.patientTableViewCell.name)
     }
 
     func setupAreaButton() {
@@ -49,7 +50,7 @@ extension PatientListViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.staffTableViewCell.name, for: indexPath) as! StaffTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.patientTableViewCell.name, for: indexPath) as! PatientTableViewCell
         return cell
 
     }
