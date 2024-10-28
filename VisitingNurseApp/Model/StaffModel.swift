@@ -22,3 +22,17 @@ struct Policies {
     let id: String
     let name: String
 }
+
+struct StaffListModel {
+    let area: String
+    let staffName: String
+    let position: String
+    let department: String
+    let team: String
+    let uptime: Int
+    var formattedUptime: String {
+        let hours = uptime / 60
+        let minutes = uptime % 60
+        return String(format: "%02d:%02d", hours, minutes)
+    }
+}

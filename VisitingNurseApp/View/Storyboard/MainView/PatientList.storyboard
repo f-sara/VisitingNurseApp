@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="iPad13_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,53 +15,112 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="PatientList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PatientListViewController" customModule="VisitingNurseApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="view" contentMode="scaleToFill" id="P87-9l-OLt">
+                        <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-IG-Uf0">
-                                <rect key="frame" x="0.0" y="59" width="393" height="68"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="h14-6g-2hw">
+                                <rect key="frame" x="0.0" y="24" width="1032" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkk-2N-ikS">
-                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="68"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-LC-ovG">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="menu">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hJs-Hj-JZK" kind="presentation" id="bKk-rZ-msq"/>
+                                            <segue destination="hJs-Hj-JZK" kind="presentation" id="nbN-9R-kTc"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPN-KX-Zfd">
-                                        <rect key="frame" x="39.333333333333343" y="0.0" width="353.66666666666663" height="68"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dY-9N-TuF">
+                                        <rect key="frame" x="103" y="0.0" width="929" height="110"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="BrightWhite"/>
                                 <constraints>
-                                    <constraint firstItem="CPN-KX-Zfd" firstAttribute="width" secondItem="g3G-IG-Uf0" secondAttribute="width" multiplier="0.9:1" id="boe-zV-1Sf"/>
+                                    <constraint firstItem="FNf-LC-ovG" firstAttribute="width" secondItem="h14-6g-2hw" secondAttribute="width" multiplier="0.1" id="KEF-nW-5Xp"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="患者一覧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LN-CJ-A6J">
-                                <rect key="frame" x="164.66666666666666" y="416" width="63.666666666666657" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MbK-Vh-i2Y">
+                                <rect key="frame" x="30" y="134" width="972" height="1212"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" text="" placeholder="職員名" translatesAutoresizingMaskIntoConstraints="NO" id="woI-Nb-0LK">
+                                        <rect key="frame" x="0.0" y="0.0" width="972" height="56"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EOA-uU-5h1">
+                                        <rect key="frame" x="0.0" y="56" width="972" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="患者氏名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIb-Lr-6qZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービス名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-BV-Sqv">
+                                                <rect key="frame" x="243" y="0.0" width="243" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="担当者氏名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZq-lp-E7l">
+                                                <rect key="frame" x="486" y="0.0" width="243" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gy1-ZJ-Mxc">
+                                                <rect key="frame" x="729" y="0.0" width="243" height="45"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <menu key="menu" title="所属エリア" id="6C6-ip-okg">
+                                                    <children>
+                                                        <command title="Item 1" id="sU1-2I-rRx"/>
+                                                        <command title="Item 2" id="XbU-tO-mcr"/>
+                                                    </children>
+                                                </menu>
+                                                <state key="normal" title="所属エリア" image="chevron.up.chevron.down" catalog="system">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Soc-Y9-fDz">
+                                        <rect key="frame" x="0.0" y="101" width="972" height="1111"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="jez-xa-zhA"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="i5L-Mk-P6f"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EOA-uU-5h1" firstAttribute="height" secondItem="woI-Nb-0LK" secondAttribute="height" multiplier="0.8" id="ha7-IT-aov"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <viewLayoutGuide key="safeArea" id="B6x-Wp-MXI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="g3G-IG-Uf0" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.08" id="77X-Z3-mRv"/>
-                            <constraint firstAttribute="trailing" secondItem="g3G-IG-Uf0" secondAttribute="trailing" id="8x7-43-Spv"/>
-                            <constraint firstItem="1LN-CJ-A6J" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Etz-GZ-srW"/>
-                            <constraint firstItem="g3G-IG-Uf0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JbE-bY-C3o"/>
-                            <constraint firstItem="g3G-IG-Uf0" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="wh8-nu-Mff"/>
-                            <constraint firstItem="1LN-CJ-A6J" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="xVc-n9-q6I"/>
+                            <constraint firstItem="h14-6g-2hw" firstAttribute="width" secondItem="P87-9l-OLt" secondAttribute="width" id="9in-tm-5Za"/>
+                            <constraint firstItem="h14-6g-2hw" firstAttribute="height" secondItem="P87-9l-OLt" secondAttribute="height" multiplier="0.08" id="DZv-an-wzD"/>
+                            <constraint firstItem="B6x-Wp-MXI" firstAttribute="bottom" secondItem="MbK-Vh-i2Y" secondAttribute="bottom" constant="10" id="GdN-xM-VNu"/>
+                            <constraint firstItem="h14-6g-2hw" firstAttribute="top" secondItem="B6x-Wp-MXI" secondAttribute="top" id="Pya-TA-wJk"/>
+                            <constraint firstItem="MbK-Vh-i2Y" firstAttribute="top" secondItem="h14-6g-2hw" secondAttribute="bottom" id="ZVC-oN-MOF"/>
+                            <constraint firstItem="MbK-Vh-i2Y" firstAttribute="leading" secondItem="B6x-Wp-MXI" secondAttribute="leading" constant="30" id="ZWn-uJ-dud"/>
+                            <constraint firstAttribute="trailing" secondItem="MbK-Vh-i2Y" secondAttribute="trailing" constant="30" id="gIk-T8-jx8"/>
+                            <constraint firstItem="h14-6g-2hw" firstAttribute="centerX" secondItem="P87-9l-OLt" secondAttribute="centerX" id="u2d-Eg-N7J"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="showSideMenuButton" destination="Pkk-2N-ikS" id="66G-AG-9hM"/>
+                        <outlet property="areaButton" destination="gy1-ZJ-Mxc" id="i5E-tz-3HB"/>
+                        <outlet property="showSideMenuButton" destination="FNf-LC-ovG" id="EPS-Wl-DqB"/>
+                        <outlet property="tableView" destination="Soc-Y9-fDz" id="aCY-b9-8YK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,17 +133,18 @@
                 <viewControllerPlaceholder storyboardIdentifier="SideMenu" storyboardName="SideMenu" referencedIdentifier="SideMenu" id="hJs-Hj-JZK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knx-3K-oSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="-2"/>
+            <point key="canvasLocation" x="1644" y="-2"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.up.chevron.down" catalog="system" width="109" height="128"/>
         <image name="menu" width="24" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.30199998617172241" green="0.53700000047683716" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="BrightWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

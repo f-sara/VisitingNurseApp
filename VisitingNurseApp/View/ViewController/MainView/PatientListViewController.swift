@@ -11,25 +11,83 @@ import SideMenu
 final class PatientListViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
+    @IBOutlet weak var areaButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
+
+    private let patientList: [PatientListModel] = [
+        PatientListModel(patientName: "John Doe", service: "Nursing", staffName: "Manager A", area: "西区"),
+        PatientListModel(patientName: "Jane Smith", service: "Physical Therapy", staffName: "Manager B", area: "須磨"),
+        PatientListModel(patientName: "Michael Brown", service: "Speech Therapy", staffName: "Manager C", area: "明石"),
+        PatientListModel(patientName: "Emily Davis", service: "Occupational Therapy", staffName: "Manager D", area: "垂水区")
+    ]
+
+    private var filteredFlag = false
+    private var filteredList: [PatientListModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupAreaButton()
+        tableView.register(UINib(nibName: R.nib.patientTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.patientTableViewCell.name)
     }
 
+    private func setupAreaButton() {
+        areaButton.menu = UIMenu(children: [
+            UIAction(title: "すべてのエリア", state: .on, handler:{_ in
+                self.filteredFlag = false
+                self.tableView.reloadData()
+            }),
+            UIAction(title: "西区", state: .on, handler:{_ in
+                self.filteredArea(area: "西区")
+            }),
+            UIAction(title: "垂水区", state: .on, handler:{_ in
+                self.filteredArea(area: "垂水区")
 
-    /*
-    // MARK: - Navigation
+            }),
+            UIAction(title: "須磨", state: .on, handler:{_ in
+                self.filteredArea(area: "須磨")
+            }),
+            UIAction(title: "明石", state: .on, handler:{_ in
+                self.filteredArea(area: "明石")
+            })
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        ])
+        areaButton.setTitle("所属エリア", for: .normal)
+        areaButton.changesSelectionAsPrimaryAction = false
     }
-    */
+
+    private func filteredArea(area: String) {
+        self.filteredFlag = true
+        self.filteredList = self.patientList.filter { $0.area == area}
+        self.tableView.reloadData()
+    }
+}
+
+extension PatientListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if filteredFlag {
+            return filteredList.count
+        } else {
+            return patientList.count
+        }
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.patientTableViewCell.name, for: indexPath) as! PatientTableViewCell
+        var patientModel = self.patientList
+        if filteredFlag {
+            patientModel = self.filteredList
+        }
+        cell.setupUI(patientModel: patientModel[indexPath.row])
+        return cell
+
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
 
 }
+
 
 extension PatientListViewController: SideMenuNavigationControllerDelegate {
 

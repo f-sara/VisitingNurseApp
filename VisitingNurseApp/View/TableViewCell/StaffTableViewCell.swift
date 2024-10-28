@@ -23,8 +23,13 @@ class StaffTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func setUI() {
-        
+    func setupUI(staffModel: StaffListModel) {
+        staffNameLabel.text = staffModel.staffName
+        positionLabel.text = staffModel.position
+        areaLabel.text = staffModel.area
+        departmentLabel.text = staffModel.department
+        teamLabel.text = staffModel.team
+        timeLabel.text = staffModel.formattedUptime
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
