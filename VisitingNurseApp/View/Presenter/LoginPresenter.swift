@@ -15,7 +15,7 @@ protocol LoginPresenterOutput: AnyObject {
     func showMainCalendar()
 }
 
-class LoginPresenter: LoginPresenterInput{
+final class LoginPresenter: LoginPresenterInput{
 
     // MARK: Private Properties
     private weak var output: LoginPresenterOutput!

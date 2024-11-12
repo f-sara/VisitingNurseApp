@@ -53,7 +53,7 @@
                                             <string>Title</string>
                                         </scopeButtonTitles>
                                         <connections>
-                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="gHH-fN-3R0"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="TgU-RN-ADZ"/>
                                         </connections>
                                     </searchBar>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-Lr-Xc6">
@@ -138,6 +138,7 @@
                     <navigationItem key="navigationItem" id="3GA-M3-SI0"/>
                     <connections>
                         <outlet property="areaButton" destination="v1q-r0-91t" id="whQ-Id-yjk"/>
+                        <outlet property="searchBar" destination="HDc-Eu-pIa" id="12u-0Z-5Qt"/>
                         <outlet property="showSideMenuButton" destination="zE1-94-co0" id="g0V-A3-Rvw"/>
                         <outlet property="tableView" destination="O6d-we-1E4" id="hO0-TK-EeV"/>
                     </connections>

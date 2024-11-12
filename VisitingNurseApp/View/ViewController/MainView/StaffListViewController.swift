@@ -8,39 +8,43 @@
 import UIKit
 import SideMenu
 
-final class StaffListViewController: UIViewController {
+final class StaffListViewController: UIViewController, UISearchBarDelegate {
+
+    private var presenter: StaffListPresenter!
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showSideMenuButton: UIButton!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var areaButton: UIButton!
 
-    private var staffList: [StaffListModel] = [
-        StaffListModel(area: "西区", staffName: "田中太郎", position: "看護師", department: "訪問看護", team: "Aチーム", uptime: 150),
-        StaffListModel(area: "垂水区", staffName: "佐藤花子", position: "理学療法士", department: "リハビリ", team: "Bチーム", uptime: 240),
-        StaffListModel(area: "明石", staffName: "山田一郎", position: "作業療法士", department: "リハビリ", team: "Cチーム", uptime: 90),
-        StaffListModel(area: "須磨", staffName: "鈴木次郎", position: "看護師", department: "訪問看護", team: "Dチーム", uptime: 180)
-    ]
+    private var staffList: [StaffModel] = []
 
     private var flag: Bool = false
     private var filteredFlag = false
-    private var filteredStaffList: [StaffListModel] = []
+    private var filteredStaffList: [StaffModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = StaffListPresenter(output: self, model: APIClient())
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
         setupAreaButton()
+        Task {
+            await presenter.fetchStaffList()
+        }
     }
 
-    @IBAction func sotedUptime(_ sender: Any) {
-        if flag == false {
-            staffList.sort { $0.uptime < $1.uptime }
-            flag = true
-        } else if flag == true {
-            //OFFにする時に走らせたい処理
-            staffList.sort { $1.uptime < $0.uptime }
-            flag = false
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        if let keyword = searchBar.text {
+            Task {
+                await presenter.searchStaffName(keyword: keyword)
+            }
         }
-        self.tableView.reloadData()
+    }
+
+
+    // TODO: バックエンド側で稼働時間が実装された後に実装する
+    @IBAction func sotedUptime(_ sender: Any) {
     }
 
     private func setupAreaButton() {
@@ -49,18 +53,18 @@ final class StaffListViewController: UIViewController {
                 self.filteredFlag = false
                 self.tableView.reloadData()
             }),
-            UIAction(title: "西区", state: .on, handler:{_ in
-                self.filteredArea(area: "西区")
+            UIAction(title: "A", state: .on, handler:{_ in
+                self.filteredArea(area: "A")
             }),
-            UIAction(title: "垂水区", state: .on, handler:{_ in
-                self.filteredArea(area: "垂水区")
+            UIAction(title: "B", state: .on, handler:{_ in
+                self.filteredArea(area: "B")
 
             }),
-            UIAction(title: "須磨", state: .on, handler:{_ in
-                self.filteredArea(area: "須磨")
+            UIAction(title: "C", state: .on, handler:{_ in
+                self.filteredArea(area: "C")
             }),
-            UIAction(title: "明石", state: .on, handler:{_ in
-                self.filteredArea(area: "明石")
+            UIAction(title: "D", state: .on, handler:{_ in
+                self.filteredArea(area: "D")
             })
 
         ])
@@ -98,6 +102,21 @@ extension StaffListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 50
      }
+
+}
+
+extension StaffListViewController: StaffListPresenterOutput {
+
+    func didFetchStaffList(_ staffList: [StaffModel]) {
+        self.staffList = staffList
+        Task { @MainActor in
+            tableView.reloadData()
+        }
+    }
+
+    func failFetchStaffList() {
+        print("職員の取得に失敗")
+    }
 
 }
 
