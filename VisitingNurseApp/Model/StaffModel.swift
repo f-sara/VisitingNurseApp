@@ -23,16 +23,19 @@ struct Policies {
     let name: String
 }
 
-struct StaffListModel {
-    let area: String
-    let staffName: String
+struct StaffListModel: Codable {
+    let username: String
     let position: String
     let department: String
     let team: String
-    let uptime: Int
-    var formattedUptime: String {
-        let hours = uptime / 60
-        let minutes = uptime % 60
-        return String(format: "%02d:%02d", hours, minutes)
-    }
+    let area: String
+    let sort_field: String?
+    let sort_order: String?
+
+//    let uptime: Int
+//    var formattedUptime: String {
+//        let hours = uptime / 60
+//        let minutes = uptime % 60
+//        return String(format: "%02d:%02d", hours, minutes)
+//    }
 }

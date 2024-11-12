@@ -14,16 +14,13 @@ final class StaffListViewController: UIViewController {
     @IBOutlet weak var showSideMenuButton: UIButton!
     @IBOutlet weak var areaButton: UIButton!
 
-    private var staffList: [StaffListModel] = [
-        StaffListModel(area: "西区", staffName: "田中太郎", position: "看護師", department: "訪問看護", team: "Aチーム", uptime: 150),
-        StaffListModel(area: "垂水区", staffName: "佐藤花子", position: "理学療法士", department: "リハビリ", team: "Bチーム", uptime: 240),
-        StaffListModel(area: "明石", staffName: "山田一郎", position: "作業療法士", department: "リハビリ", team: "Cチーム", uptime: 90),
-        StaffListModel(area: "須磨", staffName: "鈴木次郎", position: "看護師", department: "訪問看護", team: "Dチーム", uptime: 180)
-    ]
+    private var staffList: [StaffListModel] = []
 
     private var flag: Bool = false
     private var filteredFlag = false
     private var filteredStaffList: [StaffListModel] = []
+
+    private var apiClient = APIClient()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +29,27 @@ final class StaffListViewController: UIViewController {
     }
 
     @IBAction func sotedUptime(_ sender: Any) {
-        if flag == false {
-            staffList.sort { $0.uptime < $1.uptime }
-            flag = true
-        } else if flag == true {
-            //OFFにする時に走らせたい処理
-            staffList.sort { $1.uptime < $0.uptime }
-            flag = false
+//        if flag == false {
+//            staffList.sort { $0.uptime < $1.uptime }
+//            flag = true
+//        } else if flag == true {
+//            //OFFにする時に走らせたい処理
+//            staffList.sort { $1.uptime < $0.uptime }
+//            flag = false
+//        }
+//        self.tableView.reloadData()
+    }
+
+    private func fetchStaffList() async {
+        let baseURL = URL(string: "http://localhost:8080/v1/facilities/01J6SMYDSKKKNJCR2Y3242T7YX/users")!
+        apiClient.fetchData(url: baseURL,dataType: StaffListModel.self) { result in
+            switch result {
+            case .success(let data):
+                self.staffList = data
+            case .failure(let error):
+                print("エラー: \(error)")
+            }
         }
-        self.tableView.reloadData()
     }
 
     private func setupAreaButton() {
@@ -69,9 +78,9 @@ final class StaffListViewController: UIViewController {
     }
 
     private func filteredArea(area: String) {
-        self.filteredFlag = true
-        self.filteredStaffList = self.staffList.filter { $0.area == area}
-        self.tableView.reloadData()
+//        self.filteredFlag = true
+//        self.filteredStaffList = self.staffList.filter { $0.area == area}
+//        self.tableView.reloadData()
     }
 }
 
