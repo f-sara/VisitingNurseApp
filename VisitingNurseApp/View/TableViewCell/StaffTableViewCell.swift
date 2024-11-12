@@ -23,7 +23,7 @@ class StaffTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func setupUI(staffModel: StaffListModel) {
+    func setupUI(staffModel: StaffModel) {
         staffNameLabel.text = staffModel.username
         positionLabel.text = staffModel.position
         departmentLabel.text = staffModel.department

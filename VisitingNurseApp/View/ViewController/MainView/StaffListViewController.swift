@@ -10,46 +10,30 @@ import SideMenu
 
 final class StaffListViewController: UIViewController {
 
+    private var presenter: StaffListPresenter!
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showSideMenuButton: UIButton!
     @IBOutlet weak var areaButton: UIButton!
 
-    private var staffList: [StaffListModel] = []
+    private var staffList: [StaffModel] = []
 
     private var flag: Bool = false
     private var filteredFlag = false
-    private var filteredStaffList: [StaffListModel] = []
-
-    private var apiClient = APIClient()
+    private var filteredStaffList: [StaffModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = StaffListPresenter(output: self, model: APIClient())
         tableView.register(UINib(nibName: R.nib.staffTableViewCell.name, bundle: nil), forCellReuseIdentifier: R.nib.staffTableViewCell.name)
         setupAreaButton()
-    }
-
-    @IBAction func sotedUptime(_ sender: Any) {
-//        if flag == false {
-//            staffList.sort { $0.uptime < $1.uptime }
-//            flag = true
-//        } else if flag == true {
-//            //OFFにする時に走らせたい処理
-//            staffList.sort { $1.uptime < $0.uptime }
-//            flag = false
-//        }
-//        self.tableView.reloadData()
-    }
-
-    private func fetchStaffList() async {
-        let baseURL = URL(string: "http://localhost:8080/v1/facilities/01J6SMYDSKKKNJCR2Y3242T7YX/users")!
-        apiClient.fetchData(url: baseURL,dataType: StaffListModel.self) { result in
-            switch result {
-            case .success(let data):
-                self.staffList = data
-            case .failure(let error):
-                print("エラー: \(error)")
-            }
+        Task {
+            await presenter.fetchStaffList()
         }
+    }
+
+    // TODO: バックエンド側で稼働時間が実装された後に実装する
+    @IBAction func sotedUptime(_ sender: Any) {
     }
 
     private func setupAreaButton() {
@@ -58,18 +42,18 @@ final class StaffListViewController: UIViewController {
                 self.filteredFlag = false
                 self.tableView.reloadData()
             }),
-            UIAction(title: "西区", state: .on, handler:{_ in
-                self.filteredArea(area: "西区")
+            UIAction(title: "A", state: .on, handler:{_ in
+                self.filteredArea(area: "A")
             }),
-            UIAction(title: "垂水区", state: .on, handler:{_ in
-                self.filteredArea(area: "垂水区")
+            UIAction(title: "B", state: .on, handler:{_ in
+                self.filteredArea(area: "B")
 
             }),
-            UIAction(title: "須磨", state: .on, handler:{_ in
-                self.filteredArea(area: "須磨")
+            UIAction(title: "C", state: .on, handler:{_ in
+                self.filteredArea(area: "C")
             }),
-            UIAction(title: "明石", state: .on, handler:{_ in
-                self.filteredArea(area: "明石")
+            UIAction(title: "D", state: .on, handler:{_ in
+                self.filteredArea(area: "D")
             })
 
         ])
@@ -78,9 +62,9 @@ final class StaffListViewController: UIViewController {
     }
 
     private func filteredArea(area: String) {
-//        self.filteredFlag = true
-//        self.filteredStaffList = self.staffList.filter { $0.area == area}
-//        self.tableView.reloadData()
+        self.filteredFlag = true
+        self.filteredStaffList = self.staffList.filter { $0.area == area}
+        self.tableView.reloadData()
     }
 }
 
@@ -107,6 +91,21 @@ extension StaffListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 50
      }
+
+}
+
+extension StaffListViewController: StaffListPresenterOutput {
+
+    func didFetchStaffList(_ staffList: [StaffModel]) {
+        self.staffList = staffList
+        Task { @MainActor in
+            tableView.reloadData()
+        }
+    }
+
+    func failFetchStaffList() {
+        print("職員の取得に失敗")
+    }
 
 }
 

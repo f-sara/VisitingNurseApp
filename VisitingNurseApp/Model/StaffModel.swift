@@ -7,23 +7,7 @@
 
 import Foundation
 
-struct StaffModel {
-    let id: String
-    let username: String
-    let department: String
-    let position: String
-    let team: String
-    let email: String
-    let phone: String
-    let policies: Policies
-}
-
-struct Policies {
-    let id: String
-    let name: String
-}
-
-struct StaffListModel: Codable {
+struct StaffModel: Codable {
     let username: String
     let position: String
     let department: String
@@ -32,6 +16,7 @@ struct StaffListModel: Codable {
     let sort_field: String?
     let sort_order: String?
 
+    // TODO: バックエンドで稼働時間が実装されるまで実装を待機
 //    let uptime: Int
 //    var formattedUptime: String {
 //        let hours = uptime / 60
