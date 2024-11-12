@@ -8,12 +8,13 @@
 import UIKit
 import SideMenu
 
-final class StaffListViewController: UIViewController {
+final class StaffListViewController: UIViewController, UISearchBarDelegate {
 
     private var presenter: StaffListPresenter!
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showSideMenuButton: UIButton!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var areaButton: UIButton!
 
     private var staffList: [StaffModel] = []
@@ -31,6 +32,16 @@ final class StaffListViewController: UIViewController {
             await presenter.fetchStaffList()
         }
     }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        if let keyword = searchBar.text {
+            Task {
+                await presenter.searchStaffName(keyword: keyword)
+            }
+        }
+    }
+
 
     // TODO: バックエンド側で稼働時間が実装された後に実装する
     @IBAction func sotedUptime(_ sender: Any) {
