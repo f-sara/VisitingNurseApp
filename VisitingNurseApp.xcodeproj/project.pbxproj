@@ -18,6 +18,7 @@
 		8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5643522C3F6D780077E2A5 /* RswiftLibrary */; };
 		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8B73D9752CE2ECD900A7242D /* StaffListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73D9742CE2ECCC00A7242D /* StaffListPresenter.swift */; };
+		8B73D97A2CE325B100A7242D /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8B73D9792CE325B100A7242D /* FSCalendar */; };
 		8B77FCBD2CC89A9000BB3707 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */; };
 		8B77FCBE2CC89A9000BB3707 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */; };
 		8B8F228D2CCF5B060073E17D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F228C2CCF5B000073E17D /* APIClient.swift */; };
@@ -103,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BF7EE032C86CF2A00E30172 /* SideMenu in Frameworks */,
+				8B73D97A2CE325B100A7242D /* FSCalendar in Frameworks */,
 				8B5643532C3F6D780077E2A5 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +291,7 @@
 			packageProductDependencies = (
 				8B5643522C3F6D780077E2A5 /* RswiftLibrary */,
 				8BF7EE022C86CF2A00E30172 /* SideMenu */,
+				8B73D9792CE325B100A7242D /* FSCalendar */,
 			);
 			productName = VisitingNurseApp;
 			productReference = 8BD378DF2C2BBBB8003468A7 /* VisitingNurseApp.app */;
@@ -833,6 +836,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8BD379142C2E4B7E003468A7 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = RswiftLibrary;
+		};
+		8B73D9792CE325B100A7242D /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD379132C2E4A0B003468A7 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 		8BF7EE022C86CF2A00E30172 /* SideMenu */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -92,12 +92,10 @@ extension PatientListViewController: UITableViewDelegate, UITableViewDataSource 
 extension PatientListViewController: SideMenuNavigationControllerDelegate {
 
     func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
         showSideMenuButton.isHidden = true
     }
 
     func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
         showSideMenuButton.isHidden = false
     }
 }
