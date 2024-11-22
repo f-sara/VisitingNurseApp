@@ -11,11 +11,16 @@ import SideMenu
 final class MainViewController: UIViewController {
 
     @IBOutlet weak var showSideMenuButton: UIButton!
+    @IBOutlet weak var allSelectButton: UIButton!
+    @IBOutlet weak var selfSelectButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: false)
+
+        AddUIAction.addCheckBoxAction(button: allSelectButton)
+        AddUIAction.addCheckBoxAction(button: selfSelectButton)
     }
+
 }
 
 extension MainViewController: SideMenuNavigationControllerDelegate {

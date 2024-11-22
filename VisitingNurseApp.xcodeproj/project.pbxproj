@@ -19,6 +19,7 @@
 		8B6921422C4009B900ACBDE5 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE922C2C3A5B6900E476D1 /* LoginTests.swift */; };
 		8B73D9752CE2ECD900A7242D /* StaffListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73D9742CE2ECCC00A7242D /* StaffListPresenter.swift */; };
 		8B73D97A2CE325B100A7242D /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8B73D9792CE325B100A7242D /* FSCalendar */; };
+		8B73D9802CF0190400A7242D /* AddUIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73D97F2CF018F900A7242D /* AddUIAction.swift */; };
 		8B77FCBD2CC89A9000BB3707 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */; };
 		8B77FCBE2CC89A9000BB3707 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */; };
 		8B8F228D2CCF5B060073E17D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F228C2CCF5B000073E17D /* APIClient.swift */; };
@@ -70,6 +71,7 @@
 		8B4364722C39216C00760578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B4364782C39363900760578 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		8B73D9742CE2ECCC00A7242D /* StaffListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListPresenter.swift; sourceTree = "<group>"; };
+		8B73D97F2CF018F900A7242D /* AddUIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUIAction.swift; sourceTree = "<group>"; };
 		8B77FCBB2CC89A9000BB3707 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
 		8B77FCBC2CC89A9000BB3707 /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
 		8B8F228C2CCF5B000073E17D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		8B4364772C39362700760578 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B73D97D2CF018E800A7242D /* Methods */,
 				8B4364782C39363900760578 /* LoginModel.swift */,
 				8B08E7082C8FF848001D95B3 /* StaffModel.swift */,
 				8B8F228C2CCF5B000073E17D /* APIClient.swift */,
@@ -204,6 +207,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B73D97D2CF018E800A7242D /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				8B73D97F2CF018F900A7242D /* AddUIAction.swift */,
+			);
+			path = Methods;
 			sourceTree = "<group>";
 		};
 		8BD378D62C2BBBB8003468A7 = {
@@ -341,7 +352,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					8BD378DE2C2BBBB8003468A7 = {
 						CreatedOnToolsVersion = 15.4;
@@ -432,6 +443,7 @@
 				8BD378E72C2BBBB8003468A7 /* MainViewController.swift in Sources */,
 				8B8F228D2CCF5B060073E17D /* APIClient.swift in Sources */,
 				8BF7EE062C86D61800E30172 /* SideMenuTableViewController.swift in Sources */,
+				8B73D9802CF0190400A7242D /* AddUIAction.swift in Sources */,
 				8BD378E32C2BBBB8003468A7 /* AppDelegate.swift in Sources */,
 				8B73D9752CE2ECD900A7242D /* StaffListPresenter.swift in Sources */,
 				8BF7EE1C2C882A5C00E30172 /* StaffListViewController.swift in Sources */,
@@ -678,7 +690,6 @@
 		8BD3790D2C2BBBBA003468A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -698,7 +709,6 @@
 		8BD3790E2C2BBBBA003468A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -718,7 +728,6 @@
 		8BD379102C2BBBBA003468A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGJJ9A3WD8;
@@ -736,7 +745,6 @@
 		8BD379112C2BBBBA003468A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGJJ9A3WD8;
