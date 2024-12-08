@@ -41,54 +41,63 @@
                                     <constraint firstItem="Q91-xR-4q7" firstAttribute="width" secondItem="XSA-nd-3Q1" secondAttribute="width" multiplier="0.9:1" id="oCs-gn-7nL"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-gl-2ci">
-                                <rect key="frame" x="1042" y="116.5" width="324" height="885.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7y-44-jPX">
+                                <rect key="frame" x="7" y="106.5" width="1362" height="895.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sQ4-Xz-rZS">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="885.5"/>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-QX-aOj" customClass="FSCalendar" customModule="VisitingNurseApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1021.5" height="895.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="ZAm-OW-wOf"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="li9-4T-0aQ"/>
+                                        </connections>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-gl-2ci">
+                                        <rect key="frame" x="1021.5" y="0.0" width="340.5" height="895.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZv-cH-Wab">
-                                                <rect key="frame" x="0.0" y="0.0" width="162" height="885.5"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="全体" image="square" catalog="system">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asI-hp-ni8">
-                                                <rect key="frame" x="162" y="0.0" width="162" height="885.5"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="田中太郎" image="square" catalog="system">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sQ4-Xz-rZS">
+                                                <rect key="frame" x="0.0" y="0.0" width="340.5" height="895.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZv-cH-Wab">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="895.5"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="全体" image="square" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asI-hp-ni8">
+                                                        <rect key="frame" x="170.5" y="0.0" width="170" height="895.5"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="田中太郎" image="square" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Haz-gl-2ci" firstAttribute="width" secondItem="V7y-44-jPX" secondAttribute="width" multiplier="0.25" id="QWq-x9-5kI"/>
+                                </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-QX-aOj" customClass="FSCalendar">
-                                <rect key="frame" x="10" y="106.5" width="1032" height="895.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="BrightWhite"/>
                         <constraints>
-                            <constraint firstItem="Haz-gl-2ci" firstAttribute="top" secondItem="XSA-nd-3Q1" secondAttribute="bottom" constant="10" id="6KL-o4-g9R"/>
-                            <constraint firstItem="GCs-QX-aOj" firstAttribute="top" secondItem="XSA-nd-3Q1" secondAttribute="bottom" id="6ll-A5-TCZ"/>
-                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="75i-ws-Orj"/>
-                            <constraint firstItem="GCs-QX-aOj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8yn-em-YtY"/>
-                            <constraint firstItem="GCs-QX-aOj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="Bxf-BM-Lnc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Haz-gl-2ci" secondAttribute="bottom" constant="10" id="DsZ-ZG-7mJ"/>
-                            <constraint firstItem="Haz-gl-2ci" firstAttribute="leading" secondItem="GCs-QX-aOj" secondAttribute="trailing" id="UBC-Pc-goI"/>
-                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dce-gM-Urt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GCs-QX-aOj" secondAttribute="bottom" constant="10" id="fyd-3P-IVW"/>
+                            <constraint firstItem="V7y-44-jPX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.99" id="2fj-4D-ghZ"/>
+                            <constraint firstItem="V7y-44-jPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ws-xG-kck"/>
+                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IeP-xB-keW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V7y-44-jPX" secondAttribute="bottom" constant="10" id="JBR-jN-TM0"/>
+                            <constraint firstItem="V7y-44-jPX" firstAttribute="top" secondItem="XSA-nd-3Q1" secondAttribute="bottom" id="au1-ib-ygU"/>
+                            <constraint firstItem="XSA-nd-3Q1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cYb-s6-Qvj"/>
                             <constraint firstItem="XSA-nd-3Q1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="kNc-qs-NSh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Haz-gl-2ci" secondAttribute="trailing" constant="10" id="o4N-ix-qJs"/>
                             <constraint firstItem="XSA-nd-3Q1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vBC-tx-Mar"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="allSelectButton" destination="qZv-cH-Wab" id="cWO-8j-rri"/>
+                        <outlet property="calendarView" destination="GCs-QX-aOj" id="gm6-Uu-UAk"/>
                         <outlet property="selfSelectButton" destination="asI-hp-ni8" id="LAr-0U-fMr"/>
                         <outlet property="showSideMenuButton" destination="t4v-2S-Kqp" id="hra-MI-x3G"/>
                     </connections>
